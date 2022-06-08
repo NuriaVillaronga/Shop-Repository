@@ -4,8 +4,8 @@ import Product from './Product';
 function Vacio(props) {
 
   return (<Fragment>
-            <div className='col-3 border columna columna-escondida' key={`vacio-${props.id}`}/>
-            <div className='col-3 border columna' key={props.id}>{props.id}</div>
+            <div className={`col-3 columna ${props.vacio}`} key={`vacio-${props.id}`}/>
+            <div className={`col-3 columna ${props.propiedad}`} key={props.id}><Product></Product></div> 
         </Fragment>);
 }
 

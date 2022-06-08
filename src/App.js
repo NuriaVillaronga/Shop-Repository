@@ -1,36 +1,54 @@
-import React, {useState, Fragment} from 'react';
+import React from 'react';
 import './App.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import Product from './components/Product';
 import datos from './datos.json'
 import Lleno from './components/Lleno';
 import Vacio from './components/Vacio';
 
 function App() {
 
-  const [contador, setContador] = useState(0);
+  let contadorN =  0;
 
-  /** Hacer funcion que devuelva si tiene que ser vacio o falso y que actualice el contador*/
+  const showCell = (dato) => {
+
+    contadorN++;
+    console.log(contadorN);
+    if (contadorN === 14) {
+      contadorN = 1;
+    }
+    else if (contadorN === 13) {
+      return <Vacio id={dato.id} propiedad="b-bottom" vacio="vacio13"></Vacio>
+    }
+    else if (contadorN === 8) {
+      return <Vacio id={dato.id} propiedad="b-bottom" vacio="vacio8"></Vacio> 
+    }
+    else if (contadorN === 1 || contadorN === 7 || contadorN === 11) {
+      return <Lleno id={dato.id} propiedad="b-bottom"></Lleno>
+    }
+    else if (contadorN === 3) {
+      return <Vacio id={dato.id} propiedad="b-left" vacio="vacio3"></Vacio>
+    }
+    else if (contadorN === 4) {
+      return <Vacio id={dato.id} propiedad="b-top" vacio="vacio4"></Vacio>
+    }
+    else if (contadorN === 6) {
+      return <Lleno id={dato.id} propiedad="b-top"></Lleno>
+    }
+    else if (contadorN === 2 || contadorN === 9) {
+      return <Lleno id={dato.id} propiedad="b-left"></Lleno>
+    }
+    else if (contadorN === 10 || contadorN === 5 || contadorN === 12) {
+      return <Lleno id={dato.id} propiedad="b-right"></Lleno>
+    }
+  }
 
   return (
-    <div className="container-fluid">
-        <div className='row border row-container-products'>
+        <div className='row row-container-products container-fluid'>
         <div className='col-12 container-productos'>
           <div className='row row-productos-all'>
-            {
-              
-              datos.map((dato) => (
-                dato.id === 3 || dato.id === 4 || dato.id === 8 || dato.id === 13 || dato.id === 15 || dato.id === 16 || dato.id === 20
-                      ? 
-                        <Vacio id={dato.id}></Vacio>
-                      : 
-                        <Lleno id={dato.id}></Lleno>
-              ))
-            }
+            { datos.map(showCell)}
           </div>
-          
         </div>
-    </div>
     </div>
   );
 }
