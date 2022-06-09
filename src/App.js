@@ -45,7 +45,7 @@ function App() {
   return (
         <div className='row row-container-products container-fluid'>
         <div className='col-12 container-productos'>
-          <div className='row row-productos-all'>
+          <div className='row row-productos-all' onClick={alert(window.innerWidth)}>
             { datos.map(showCell)}
           </div>
         </div>
