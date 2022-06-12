@@ -101,14 +101,26 @@
     },
     {
         "id":26,
-        "imagen":"imagen23"
+        "imagen":"imagen26"
     },
     {
         "id":27,
-        "imagen":"imagen24"
+        "imagen":"imagen27"
     },
     {
         "id":28,
-        "imagen":"imagen25"
+        "imagen":"imagen28"
+    },
+    {
+        "id":29,
+        "imagen":"imagen29"
+    },
+    {
+        "id":30,
+        "imagen":"imagen30"
+    },
+    {
+        "id":31,
+        "imagen":"imagen31"
     }
 ]
