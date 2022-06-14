@@ -1,15 +1,6 @@
 
-.vacio13 {
-    background-color: rgb(202, 255, 255) !important;
-}
-.vacio4 {
-    background-color: rgb(216, 255, 202) !important;
-}
-.vacio8 {
-    background-color: rgb(255, 202, 228) !important;
-}
-.vacio3 {
-    background-color: rgba(255, 186, 36, 0.853) !important;
+.vacio {
+    border: 1px solid rgb(203, 255, 179) !important;
 }
 
 .b-right .figura-pred, .b-right .figura-4, .b-right .figura-3, .b-right .figura-2 {
@@ -94,7 +85,7 @@
 .figura-pred img, .figura-4 img {
     width: 398px; 
 }
-#row-productos-all-4 .vacio4, #row-productos-all-4 .vacio8, #row-productos-all-4 .vacio3, #row-productos-all-4 .vacio13 {
+#row-productos-all-4 .vacio {
     display: none !important;
 }
 
@@ -104,7 +95,7 @@
     justify-content: center;
     align-items: center;
 }
-#row-productos-all-3 .vacio13,  #row-productos-all-3 .vacio3, #row-productos-all-3 .vacio4, #row-productos-all-3 .vacio8 {
+#row-productos-all-3 .vacio {
     display: none !important;
 }
 .columna-3 {
@@ -131,7 +122,7 @@
     justify-content: center;
     align-items: center;
 }
-#row-productos-all-2 .vacio13,  #row-productos-all-2 .vacio3, #row-productos-all-2 .vacio4, #row-productos-all-2 .vacio8 {
+#row-productos-all-2 .vacio {
     display: none !important;
 }
 .columna-2 {
@@ -153,11 +144,98 @@
     width: 800px; 
 }
 
+#div-filtros {
+    padding-top: 25px;
+    padding-bottom: 25px;
+    display: none;
+    height: auto;
+}
+.tabla-filtros {
+    border-left: 1px solid rgba(243, 243, 243, 0.849);
+    border-top: 1px solid rgba(243, 243, 243, 0.849);
+    background-color: rgba(255, 255, 255, 0.445);
+    box-shadow: 7px 7px 10px 0px rgb(240, 240, 240);
+}
+.button-filtros-delete {
+    text-align: center !important;
+}
+.button-filtros-delete button{
+    background-color: white !important;
+    color: rgb(0, 0, 0);
+    font-size: 13px;
+    padding: 7px;
+    width: 35%;
+    border: 1px solid rgb(192, 192, 192);
+}
+.button-filtros-delete button:hover {
+    border: 1px solid rgb(0, 0, 0);
+}
+.col-filtros {
+    font-size: 14px;
+}
+.row-all-filtros {
+    padding: 20px;
+}
+.row-delete-filtros {
+    padding-bottom: 30px;
+}
+.filtro-concreto-col {
+    padding-top: 5px;
+    padding-bottom: 2px;
+}
+.filtro-concreto-col input {
+    margin-right: 8px !important;
+}
+input[type="checkbox"] {
+    background-color: white !important;
+    cursor: pointer !important;
+    appearance: none !important;
+    box-sizing: border-box;
+    margin: 0px 0px 1px 0px;
+    padding: 3px;
+    height: 3px !important;
+    width: 3px !important;
+    border-radius: 7px;
+    border: 1px solid rgb(161, 161, 161) !important;
+}
+input[type="checkbox"]:checked {
+    background-color: black !important;
+    cursor: pointer !important;
+    appearance: none !important;
+    box-sizing: border-box;
+    margin: 0px 0px 1px 0px;
+    padding: 3px;
+    height: 3px !important;
+    width: 3px !important;
+    border-radius: 7px;
+    border: 1px solid black !important;
+}
+.tipo-col {
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+.filtro-aplicado {
+    font-size: 10px;
+    padding: 7px;
+    color: black;
+    border-radius: 3px;
+    border: 1px solid rgb(219, 219, 219);
+    background-color: white;
+    display: inline;
+    margin-right: 10px;
+}
+.col-vista {
+    text-align: right;
+    padding-right: 70px !important;
+}
+.row-options {
+    padding-left: 57px !important;
+}
 
-@import url(1815-1345.css) all;
-@import url(1328-990.css) all;
-@import url(985-634.css) all;
-@import url(630-210.css) all;
+@import url(css/1815-1345.css) all;
+@import url(css/1328-990.css) all;
+@import url(css/985-634.css) all;
+@import url(css/630-210.css) all;
 
 
 

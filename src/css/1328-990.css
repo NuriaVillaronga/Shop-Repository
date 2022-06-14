@@ -29,7 +29,7 @@
         align-items: center !important;
         max-width: 100% !important;
     }
-    #row-productos-all .vacio3, #row-productos-all .vacio4, #row-productos-all .vacio8, #row-productos-all .vacio13 {
+    #row-productos-all .vacio {
         display: none !important;
     }
 }

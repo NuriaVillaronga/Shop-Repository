@@ -1,0 +1,7 @@
+<svg version="1.0" xmlns="http://www.w3.org/2000/svg" id="view-3" width="28" height="40px" viewBox="0 0 28 40" preserveAspectRatio="xMidYMid meet">
+    <g transform="translate(0,35) scale(0.1,-0.1)" fill="rgb(219, 219, 219)" stroke="none">
+        <path d="M0 145 l0 -145 40 0 40 0 0 145 0 145 -40 0 -40 0 0 -145z m70 0 l0 -135 -30 0 -30 0 0 135 0 135 30 0 30 0 0 -135z"/>
+        <path d="M100 145 l0 -145 40 0 40 0 0 145 0 145 -40 0 -40 0 0 -145z m70 0 l0 -135 -30 0 -30 0 0 135 0 135 30 0 30 0 0 -135z"/>
+        <path d="M200 145 l0 -145 40 0 40 0 0 145 0 145 -40 0 -40 0 0 -145z m70 0 l0 -135 -30 0 -30 0 0 135 0 135 30 0 30 0 0 -135z"/>
+    </g>
+</svg>

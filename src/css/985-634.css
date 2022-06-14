@@ -23,9 +23,6 @@
     .b-right .figura-2, .b-left .figura-2, .b-bottom .figura-2, .b-top .figura-2 {
         border: none !important;
     }
-    #row-productos-all-4 .vacio3, #row-productos-all-4 .vacio4, #row-productos-all-4 .vacio8, #row-productos-all-4 .vacio13 {
-        display: none !important;
-    }
     #row-productos-all-2 {
         max-width: 100% !important;
         padding-left: 15px !important;
