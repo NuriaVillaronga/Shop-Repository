@@ -121,7 +121,6 @@
     padding-top: 0px;
     padding-bottom: 50px !important;
     min-width: 570px;
-    border: 1px solid blue;
 }
 .figura-3 { 
     width: 570px;
@@ -132,7 +131,8 @@
     width: 570px; 
 }
 .options-all-3 {
-    border: 1px solid blue;
+    margin-top: 80px !important;
+    margin-bottom: 20px !important;
     min-width: 570px;
 }
 .options-3-3 {
@@ -156,12 +156,11 @@
     display: flex;
     justify-content: center !important;
     align-items: center !important;
-    padding-top: 25px;
+    padding-top: 20px;
     padding-bottom: 50px;
     padding-left: 20px;
     padding-right: 20px;
     min-width: 800px;
-    border: 1px solid orange;
 }
 .figura-2 { 
     width: 800px;
@@ -173,7 +172,7 @@
 }
 .options-all-2 {
     min-width: 800px;
-    border: 1px solid orange;
+    margin-top: 80px !important;
 }
 #row-productos-all-2 {
     width: 1600px;

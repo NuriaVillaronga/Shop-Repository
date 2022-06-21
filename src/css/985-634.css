@@ -10,13 +10,19 @@
     }
     .options-all-2 {
         min-width: 440px !important;
+        padding-right: 0px !important;
+        padding-left: 10px !important;
     }
     .options-pred {
         min-width: 440px !important;
         padding-right: 0px !important;
         padding-left: 10px !important;
     }
-
+    .options-all-3 {
+        min-width: 295px !important;
+        padding-right: 0.5px !important;
+        padding-left: 10px !important;
+    }
     .figura-pred, .figura-2 {
         width: 440px !important; 
     }
@@ -32,7 +38,7 @@
         padding-left: 17px !important;
         padding-right: 17px !important;
     }
-    .columna-3, .options-all-3 {
+    .columna-3 {
         min-width: 295px !important;
         padding-left: 3px !important;
         padding-right: 3px !important; 
@@ -404,6 +410,14 @@
         padding-left: 0px !important;
         padding-right: 0px !important;
     }
+    #row-productos-all-3 .row-btn-vistas button {
+        margin-right: 0px !important;
+        margin-left: 10px !important;
+    }
+    .options-all-3 {
+        padding-right: 3px !important;
+        padding-left: 7px !important;
+    }
     .columna-3 {
         padding-left: 6px !important;
         padding-right: 3px !important;
@@ -451,6 +465,10 @@
         margin-right: 0px !important;
         margin-left: 10px !important;
     }
+    #row-productos-all-2 .row-btn-vistas button {
+        margin-right: 0px !important;
+        margin-left: 10px !important;
+    }
     #row-productos-all {
         padding-left: 15px;
         padding-right: 15px;
@@ -462,6 +480,8 @@
     }
     .options-all-2 {
         min-width: 350px !important;
+        padding-left: 8px !important;
+        padding-right: 4px !important;
     }
     .options-pred {
         min-width: 350px !important;

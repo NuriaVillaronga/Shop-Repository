@@ -68,10 +68,13 @@
         padding-left: 15px;
         padding-right: 15px;
     }
+    .options-all-3 {
+        padding-left: 10px !important;
+    }
     .figura-4, .figura-3 { 
         padding: 6px !important;
     }
-    .columna-4, .columna-3, .options-all-4, .options-all-3 {
+    .columna-4, .columna-3, .options-all-4 {
         padding-left: 2px !important;
         padding-right: 0px !important;
     }
