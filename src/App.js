@@ -4,10 +4,9 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import datos from './datos.json'
 import Lleno from './components/Lleno';
 import Vacio from './components/Vacio';
-import Filtro from './components/Filtro';
-import view2 from '../src/icons/2.svg';
-import view3 from '../src/icons/3.svg';
-import view4 from '../src/icons/4.svg'
+import Vista from './components/Vista';
+import TablaFiltros from './components/TablaFiltros';
+import filter from './icons/filter.png';
 
 function App() {
 
@@ -72,6 +71,10 @@ function App() {
     icon3.setAttribute("style","color:rgb(219, 219, 219)");
     icon2.setAttribute("style","color:black");
     iconPred.setAttribute("style","color:rgb(219, 219, 219)");
+
+    var filtros = document.getElementById("div-filtros");
+    filtros.setAttribute("style","display:none");
+    setFiltro(true);
   }
 
   const handleColTres = () => {
@@ -96,6 +99,10 @@ function App() {
     row3.setAttribute("style","display:flex");
     row2.setAttribute("style","display:none");
     rowPred.setAttribute("style","display:none");
+
+    var filtros = document.getElementById("div-filtros");
+    filtros.setAttribute("style","display:none");
+    setFiltro(true);
   }
 
   const handleColCuatro = () => {
@@ -122,6 +129,9 @@ function App() {
     row2.setAttribute("style","display:none");
     rowPred.setAttribute("style","display:none");
 
+    var filtros = document.getElementById("div-filtros");
+    filtros.setAttribute("style","display:none");
+    setFiltro(true);
   }
 
   const handleColPred = () => {
@@ -152,35 +162,29 @@ function App() {
     icon3.setAttribute("style","color:rgb(219, 219, 219)");
     icon2.setAttribute("style","color:rgb(219, 219, 219)");
     iconPred.setAttribute("style","color:black");
+
+    var filtros = document.getElementById("div-filtros");
+    filtros.setAttribute("style","display:none");
+    setFiltro(true);
   }
 
   const [filtro, setFiltro] = useState(true)
-  const handleFilter = () => {
-  var filtros = document.getElementById("div-filtros");
-    if (filtro == true) {
-        filtros.setAttribute("style","display:flex");
-        setFiltro(false);
-    }
-    if (filtro == false) {
-      filtros.setAttribute("style","display:none");
-      setFiltro(true);
-    }
+
+  const [show, setShow] = useState(false);
+
+  const handleClose = () => {
+      var filtroBtnShow = document.querySelectorAll(".filtro-principal");
+      var filtroBtnHidde = document.querySelectorAll(".filtro-principal-ocultar");
+      filtroBtnShow.forEach(btn => btn.style.display = "block");
+      filtroBtnHidde.forEach(btn => btn.style.display = "none");
+      setShow(false);
   }
-
-  const arrayProductos = [ "Vestidos", "Abrigos", "Sudaderas", "Camisetas", "Chaquetas", "Pantalones", "Faldas", "Tops", "Calzado", "Bolsos", "Accesorios" ];                 
-  const arrayRopa = [ "XS", "S", "M", "L", "XL" ];
-  const arrayCalzado = [ "36", "37", "38", "39", "40", "41" ];
-  const arrayMarca = [ "For Love & Lemons", "Aniye By", "Punk void", "Marina Eeirre", "SKETCH-Y", "Heimat Atlántica" ];
-  const arrayPrecio = [ "€0.00 - €125.00", "€125.00 - €245.00", "€245.00 - €390.00", "€390.00+" ];
-  const arrayColor = [ "Neutros", "Cálidos", "Fríos", "Multicolor" ];
-
-  const handleDeleteFiltros = () => {
-  var checks = document.querySelectorAll(".check-filtro");
-    checks.forEach(check => {
-        if (check.checked == true) {
-          check.checked = false;
-        }
-    });
+  const handleShow = () => {
+      var filtroBtnShow = document.querySelectorAll(".filtro-principal");
+      var filtroBtnHidde = document.querySelectorAll(".filtro-principal-ocultar");
+      filtroBtnShow.forEach(btn => btn.style.display = "none");
+      filtroBtnHidde.forEach(btn => btn.style.display = "block");
+      setShow(true);
   }
 
   /**
@@ -189,48 +193,74 @@ function App() {
    */
   return (
             <div className='row row-container-products container-fluid'>
-                <div className="col-12">
-                    <div className="row row-options">
-                        <div className="col-6">
-                            <button type="button" onClick={handleFilter}>Filter</button>
-                        </div>
-                        <div className="col-6 col-vista">
-                            <button onClick={handleColPred}><span id="view-default">Defecto</span></button>
-                            <button onClick={handleColCuatro}><img src={view4} id="view-4"/></button>
-                            <button onClick={handleColTres}><img src={view3} id="view-3"/></button>
-                            <button onClick={handleColDos}><img src={view2} id="view-2"/></button>
-                            <span>Vista</span>
-                        </div>
-                    </div>
-                    <div className="row" id="div-filtros">
-                        <div className="col-2"></div>
-                        <div className="col-8 tabla-filtros">
-                          <div className="row row-all-filtros">
-                            <Filtro arrayFiltros={arrayProductos} tipo="PRODUCTOS"/>
-                            <Filtro arrayFiltros={arrayMarca} tipo="MARCA"/>
-                            <Filtro arrayFiltros={arrayColor} tipo="COLOR"/>
-                            <Filtro arrayFiltros={arrayRopa} tipo="TALLA (Ropa)"/>
-                            <Filtro arrayFiltros={arrayCalzado} tipo="NÚMERO (Calzado)"/>
-                            <Filtro arrayFiltros={arrayPrecio} tipo="PRECIO"/>
-                          </div>
-                          <div className="row row-delete-filtros">
-                            <div className="col-3"></div>
-                            <div className="col-6 button-filtros-delete"><button type="button" onClick={handleDeleteFiltros}>ELIMINAR FILTROS</button></div>
-                            <div className="col-3"></div>
-                          </div>
-                        </div>
-                        <div className="col-2"></div>
-                    </div>  
-                    <div className="col-12">Filtros aplicados: 
-                        <div className="filtro-aplicado">SUDADERAS<button type="button">x</button></div>
-                        <div className="filtro-aplicado">CAMISETAS<button type="button">x</button></div>
-                    </div>  
+                <div className="col-12">  
+                    <TablaFiltros/>
                 </div>
-                <div className='col-12 container-productos'>
-                    <div className='row' id="row-productos-all">{ datos.map(showCell)}</div>
-                    <div className='row' id="row-productos-all-2">{ datos.map(showCell)}</div>
-                    <div className='row' id="row-productos-all-3">{ datos.map(showCell)}</div>
-                    <div className='row' id="row-productos-all-4">{ datos.map(showCell)}</div>
+
+
+                <div className='col-12 container-productos' onClick={alert(window.innerWidth)}>
+
+
+                    <div className='row' id="row-productos-all">
+                        <div className="col-12">
+                            <div className="row row-options-columna">
+                              <div className="col-3 options-pred">
+                                  <button type="button" className="filtro-principal" onClick={handleShow}><img src={filter}/> Mostrar filtro</button>
+                                  <button type="button" className="filtro-principal-ocultar" onClick={handleClose}><img src={filter}/> Ocultar filtro</button>
+                                  <TablaFiltros show={show} handleClose={handleClose}></TablaFiltros>
+                              </div>
+                              <Vista clase="col-3 options-pred options-3" handleColPred={handleColPred} handleColCuatro={handleColCuatro} handleColTres={handleColTres} handleColDos={handleColDos}/>
+                              <Vista clase="col-3 options-pred options-2" handleColPred={handleColPred} handleColCuatro={handleColCuatro} handleColTres={handleColTres} handleColDos={handleColDos}/>
+                              <Vista clase="col-3 options-pred options-1" handleColPred={handleColPred} handleColCuatro={handleColCuatro} handleColTres={handleColTres} handleColDos={handleColDos}/>
+                            </div>
+                        </div>
+                        {datos.map(showCell)}
+                    </div>
+
+                    <div className='row' id="row-productos-all-2">
+                        <div className="col-12">
+                            <div className="row row-options-columna">
+                              <div className="col-3 options-all-2">
+                                  <button type="button" className="filtro-principal" onClick={handleShow}><img src={filter}/> Mostrar filtro</button> 
+                                  <button type="button" className="filtro-principal-ocultar" onClick={handleClose}><img src={filter}/> Ocultar filtro</button>  
+                              </div>
+                              <Vista clase="col-3 options-all-2 options-2-1" handleColPred={handleColPred} handleColCuatro={handleColCuatro} handleColTres={handleColTres} handleColDos={handleColDos}/>
+                            </div>
+                        </div>
+                        {datos.map(showCell)}
+                    </div>
+                    
+                    <div className='row' id="row-productos-all-3">
+                        <div className="col-12">
+                            <div className="row row-options-columna">
+                              <div className="col-3 options-all-3">
+                                  <button type="button" className="filtro-principal" onClick={handleShow}><img src={filter}/> Mostrar filtro</button> 
+                                  <button type="button" className="filtro-principal-ocultar" onClick={handleClose}><img src={filter}/> Ocultar filtro</button>
+                                  <TablaFiltros show={show} handleClose={handleClose}></TablaFiltros> 
+                              </div>
+                              <Vista clase="col-3 options-all-3 options-3-2" handleColPred={handleColPred} handleColCuatro={handleColCuatro} handleColTres={handleColTres} handleColDos={handleColDos}/>
+                              <Vista clase="col-3 options-all-3 options-3-1" handleColPred={handleColPred} handleColCuatro={handleColCuatro} handleColTres={handleColTres} handleColDos={handleColDos}/>
+                              <Vista clase="col-3 options-all-3 options-3-3" handleColPred={handleColPred} handleColCuatro={handleColCuatro} handleColTres={handleColTres} handleColDos={handleColDos}/>
+                            </div>
+                        </div>
+                        {datos.map(showCell)}
+                    </div>
+
+                    <div className='row' id="row-productos-all-4">
+                        <div className="col-12">
+                            <div className="row row-options-columna">
+                              <div className="col-3 options-all-4">
+                                  <button type="button" className="filtro-principal" onClick={handleShow}><img src={filter}/> Mostrar filtro</button>
+                                  <button type="button" className="filtro-principal-ocultar" onClick={handleClose}><img src={filter}/> Ocultar filtro</button>
+                                  <TablaFiltros show={show} handleClose={handleClose}></TablaFiltros>
+                              </div>
+                              <Vista clase="col-3 options-all-4 options-4-1" handleColPred={handleColPred} handleColCuatro={handleColCuatro} handleColTres={handleColTres} handleColDos={handleColDos}/>
+                              <Vista clase="col-3 options-all-4 options-4-2" handleColPred={handleColPred} handleColCuatro={handleColCuatro} handleColTres={handleColTres} handleColDos={handleColDos}/>
+                              <Vista clase="col-3 options-all-4 options-4-3" handleColPred={handleColPred} handleColCuatro={handleColCuatro} handleColTres={handleColTres} handleColDos={handleColDos}/>
+                            </div>
+                        </div>
+                        {datos.map(showCell)}
+                    </div>
                 </div> 
             </div>
         );
