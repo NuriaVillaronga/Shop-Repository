@@ -1,6 +1,6 @@
 import React from 'react';
 import { Figure } from 'react-bootstrap';
-import imagen from '../camiseta.jpg';
+import imagen from '../../camiseta.jpg';
 
 function Product(props) {
   return (

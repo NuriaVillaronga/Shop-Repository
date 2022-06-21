@@ -1,14 +1,14 @@
 /*VIEWS COLUMNS CSS*/
-#row-productos-all {
+#container-products-default {
     width: 1592px;
 }
-.options-3, .options-2, .options-1 {
+.options-default-1, .options-default-2, .options-default-3 {
     display: flex;
     justify-content: right !important;
     align-items: right !important;
     padding-right: 15px;
 } 
-.columna {
+.products-default {
     display: flex;
     justify-content: center !important;
     align-items: center !important;
@@ -16,19 +16,19 @@
     padding-bottom: 50px !important;
     max-width: 398px !important;
 }
-.options-pred {
+.options-products-default {
     max-width: 398px !important;
 }
 .products-4, .products-3, .products-2, #container-products-4, #container-products-3, #container-products-2, .options-3-3 {   
     display: none;
 }
-.options-4-2, .options-4-1, .options-3-2, .options-3, .options-2 {
+.options-4-2, .options-4-1, .options-3-1, .options-default-1, .options-default-2 {
     visibility: hidden;
 }
-.options-all-4, .options-pred {
+.options-products-4, .options-products-default {
     padding-right: 10px;
 }
-.options-all-4, .options-pred, .options-all-3 {
+.options-products-4, .options-products-default, .options-products-3 {
     margin-top: 80px !important;
     margin-bottom: 20px !important;
 }
@@ -39,13 +39,13 @@
     margin: 0px !important;
     padding: 6px;
 }
-.figura-3 img, .options-all-3, .figura-3 {
+.figura-3 img, .options-products-3, .figura-3 {
     width: 570px; 
 }
 .figura-2 img, .figura-2 {
     width: 800px; 
 }
-.options-all-2 {
+.options-products-2 {
     min-width: 800px;
     margin-top: 80px !important;
 }

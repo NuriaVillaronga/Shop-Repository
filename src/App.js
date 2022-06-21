@@ -2,14 +2,13 @@ import React, {useState} from 'react';
 import './App.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import datos from './datos.json'
-import Lleno from './components/Lleno';
-import Vacio from './components/Vacio';
-import filter from './icons/filter.png';
-import TwoColumnsView from './components/views/TwoColumnsView';
-import DefaultView from './components/views/DefaultView';
-import ThreeColumnsView from './components/views/ThreeColumnsView';
-import FourColumnsView from './components/views/FourColumnsView';
-import TablaFiltros from './components/TablaFiltros';
+import Lleno from './components/product/Lleno';
+import Vacio from './components/product/Vacio';
+import TwoColumnsView from './components/view/TwoColumnsView';
+import DefaultView from './components/view/DefaultView';
+import ThreeColumnsView from './components/view/ThreeColumnsView';
+import FourColumnsView from './components/view/FourColumnsView';
+import TablaFiltros from './components/filter/TablaFiltros';
 
 function App() {
 
@@ -33,11 +32,11 @@ function App() {
 
 
   const handleColDos = () => {
-    let columnasPred = document.querySelectorAll(".columna"); 
+    let columnasPred = document.querySelectorAll(".products-default"); 
     let columnas4 = document.querySelectorAll(".products-4");
     let columnas3 = document.querySelectorAll(".products-3"); 
     let columnas2 = document.querySelectorAll(".products-2");
-    let rowPred = document.getElementById("row-productos-all"); 
+    let rowPred = document.getElementById("container-products-default");  
     let row4 = document.getElementById("container-products-4");
     let row3 = document.getElementById("container-products-3");
     let row2 = document.getElementById("container-products-2");
@@ -53,11 +52,11 @@ function App() {
   }
 
   const handleColTres = () => {
-    let columnasPred = document.querySelectorAll(".columna");
+    let columnasPred = document.querySelectorAll(".products-default");
     let columnas4 = document.querySelectorAll(".products-4");
     let columnas3 = document.querySelectorAll(".products-3");
     let columnas2 = document.querySelectorAll(".products-2");
-    let rowPred = document.getElementById("row-productos-all");
+    let rowPred = document.getElementById("container-products-default");
     let row4 = document.getElementById("container-products-4");
     let row3 = document.getElementById("container-products-3");
     let row2 = document.getElementById("container-products-2");
@@ -73,11 +72,11 @@ function App() {
   }
 
   const handleColCuatro = () => {
-    let columnasPred = document.querySelectorAll(".columna");
+    let columnasPred = document.querySelectorAll(".products-default");
     let columnas4 = document.querySelectorAll(".products-4");
     let columnas3 = document.querySelectorAll(".products-3");
     let columnas2 = document.querySelectorAll(".products-2");
-    let rowPred = document.getElementById("row-productos-all");
+    let rowPred = document.getElementById("container-products-default");
     let row4 = document.getElementById("container-products-4");
     let row3 = document.getElementById("container-products-3");
     let row2 = document.getElementById("container-products-2");
@@ -93,11 +92,11 @@ function App() {
   }
 
   const handleColPred = () => {
-    let columnasPred = document.querySelectorAll(".columna");
+    let columnasPred = document.querySelectorAll(".products-default");
     let columnas4 = document.querySelectorAll(".products-4");
     let columnas3 = document.querySelectorAll(".products-3");
     let columnas2 = document.querySelectorAll(".products-2");
-    let rowPred = document.getElementById("row-productos-all");
+    let rowPred = document.getElementById("container-products-default");
     let row4 = document.getElementById("container-products-4");
     let row3 = document.getElementById("container-products-3");
     let row2 = document.getElementById("container-products-2");
@@ -133,10 +132,10 @@ function App() {
   return (
             <div className='row row-container-products container-fluid'>
                 <div className='col-12 container-productos'>
-                    <DefaultView handleColPred={handleColPred} handleColCuatro={handleColCuatro} handleColTres={handleColTres} handleColDos={handleColDos} handleClose={handleClose} handleShow={handleShow} datos={datos} showCell={showCell} filter={filter}/>
-                    <TwoColumnsView handleColPred={handleColPred} handleColCuatro={handleColCuatro} handleColTres={handleColTres} handleColDos={handleColDos} handleClose={handleClose} handleShow={handleShow} datos={datos} showCell={showCell} filter={filter}/>
-                    <ThreeColumnsView handleColPred={handleColPred} handleColCuatro={handleColCuatro} handleColTres={handleColTres} handleColDos={handleColDos} handleClose={handleClose} handleShow={handleShow} datos={datos} showCell={showCell} filter={filter}/>
-                    <FourColumnsView handleColPred={handleColPred} handleColCuatro={handleColCuatro} handleColTres={handleColTres} handleColDos={handleColDos} handleClose={handleClose} handleShow={handleShow} datos={datos} showCell={showCell} filter={filter}/>
+                    <DefaultView handleColPred={handleColPred} handleColCuatro={handleColCuatro} handleColTres={handleColTres} handleColDos={handleColDos} handleClose={handleClose} handleShow={handleShow} datos={datos} showCell={showCell}/>
+                    <TwoColumnsView handleColPred={handleColPred} handleColCuatro={handleColCuatro} handleColTres={handleColTres} handleColDos={handleColDos} handleClose={handleClose} handleShow={handleShow} datos={datos} showCell={showCell}/>
+                    <ThreeColumnsView handleColPred={handleColPred} handleColCuatro={handleColCuatro} handleColTres={handleColTres} handleColDos={handleColDos} handleClose={handleClose} handleShow={handleShow} datos={datos} showCell={showCell}/>
+                    <FourColumnsView handleColPred={handleColPred} handleColCuatro={handleColCuatro} handleColTres={handleColTres} handleColDos={handleColDos} handleClose={handleClose} handleShow={handleShow} datos={datos} showCell={showCell}/>
                     <TablaFiltros show={show} handleClose={handleClose}></TablaFiltros>
                 </div> 
             </div>

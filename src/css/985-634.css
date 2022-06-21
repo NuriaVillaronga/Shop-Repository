@@ -1,32 +1,21 @@
 @media screen and (max-width: 985px) {
-    .vacio4 {
-        display: none !important;
-    }
-    .columna, .products-2 {
+    .products-default, .products-2 {
         min-width: 440px !important;
         padding-left: 4px !important;
         padding-right: 4px !important;
         padding-bottom: 25px !important;
     }
-    .options-all-2 {
+    .options-products-default, .options-products-2 {
         min-width: 440px !important;
         padding-right: 0px !important;
         padding-left: 10px !important;
     }
-    .options-pred {
-        min-width: 440px !important;
-        padding-right: 0px !important;
-        padding-left: 10px !important;
-    }
-    .options-all-3 {
+    .options-products-3 {
         min-width: 295px !important;
         padding-right: 0.5px !important;
         padding-left: 10px !important;
     }
-    .figura-pred, .figura-2 {
-        width: 440px !important; 
-    }
-    .figura-pred img, .figura-2 img {
+    .figura-pred img, .figura-2 img, .figura-pred, .figura-2 {
         width: 440px !important;
     }
     #container-products-2 {
@@ -43,87 +32,87 @@
         padding-left: 3px !important;
         padding-right: 3px !important; 
     }
-    .options-2 {
+    .options-default-2 {
         display: none !important;
     }
-    .options-3 {
+    .options-default-1 {
         visibility: visible !important;
     }
 }
 @media screen and (max-width: 980px) {
-    .columna, .products-2, .options-pred, .options-all-2 { 
+    .products-default, .products-2, .options-products-default, .options-products-2 { 
         min-width: 438px !important;
     }
-    .products-3, .options-all-3 {
+    .products-3, .options-products-3 {
         min-width: 294px !important;
     }
 }
 @media screen and (max-width: 975px) {
-    .columna, .products-2, .options-pred, .options-all-2 { 
+    .products-default, .products-2, .options-products-default, .options-products-2 { 
         min-width: 436px !important;
     }
-    .products-3, .options-all-3 {
+    .products-3, .options-products-3 {
         min-width: 293px !important;
     }
 }
 @media screen and (max-width: 970px) {
-    .columna, .products-2, .options-pred, .options-all-2 {
+    .products-default, .products-2, .options-products-default, .options-products-2 {
         min-width: 434px !important;
     }
-    .products-3, .options-all-3 {
+    .products-3, .options-products-3 {
         min-width: 292px !important;
     }
 }
 @media screen and (max-width: 965px) {
-    .columna, .products-2, .options-pred, .options-all-2 {
+    .products-default, .products-2, .options-products-default, .options-products-2 {
         min-width: 432px !important;
     }
-    .products-3, .options-all-3 {
+    .products-3, .options-products-3 {
         min-width: 291px !important;
     }
 }
 @media screen and (max-width: 961px) {
-    .columna, .products-2, .options-pred, .options-all-2 {
+    .products-default, .products-2, .options-products-default, .options-products-2 {
         min-width: 430px !important; 
     }
-    .products-3, .options-all-3 {
+    .products-3, .options-products-3 {
         min-width: 290px !important;
     }
 }
 @media screen and (max-width: 955px) {
-    .columna, .products-2, .options-pred, .options-all-2 {
+    .products-default, .products-2, .options-products-default, .options-products-2 {
         min-width: 428px !important;
     }
-    .products-3, .options-all-3 {
+    .products-3, .options-products-3 {
         min-width: 289px !important;
     }
 }
 @media screen and (max-width: 950px) {
-    .columna, .products-2, .options-pred, .options-all-2 {
+    .products-default, .products-2, .options-products-default, .options-products-2 {
         min-width: 426px !important;
     }
-    .products-3, .options-all-3 {
+    .products-3, .options-products-3 {
         min-width: 288px !important;
     }
 }
 @media screen and (max-width: 945px) {
-    .columna, .products-2, .options-pred, .options-all-2 {
+    .products-default, .products-2, .options-products-default, .options-products-2 {
         min-width: 424px !important; 
     }
-    .products-3, .options-all-3 {
+    .products-3, .options-products-3 {
         min-width: 287px !important;
     }
 }
 @media screen and (max-width: 940px) {
-    .columna, .products-2, .options-pred, .options-all-2 {
+    .products-default, .products-2, .options-products-default, .options-products-2 {
         min-width: 422px !important;
     }
-    .products-3, .options-all-3 {
+    .products-3, .options-products-3 {
         min-width: 286px !important;
     }
 }
 @media screen and (max-width: 935px) {
-    .columna, .products-2, .options-pred, .options-all-2 {
+    .products-default, .products-2, .options-products-default, .options-products-2 {
         min-width: 420px !important;
     }
     #container-products-3 {
@@ -133,29 +122,29 @@
     }
 }
 @media screen and (max-width: 930px) {
-    .columna, .products-2, .options-pred, .options-all-2 {
+    .products-default, .products-2, .options-products-default, .options-products-2 {
         min-width: 418px !important;
     }
-    .products-3, .options-all-3 {
+    .products-3, .options-products-3 {
         min-width: 284px !important;
     }
 }
 @media screen and (max-width: 925px) {
-    .columna, .products-2, .options-pred, .options-all-2 {
+    .products-default, .products-2, .options-products-default, .options-products-2 {
         min-width: 416px !important;
     }
-    .products-3, .options-all-3 {
+    .products-3, .options-products-3 {
         min-width: 283px !important;
     }
 }
 @media screen and (max-width: 920px) {
-    .columna, .products-2, .options-pred, .options-all-2 {
+    .products-default, .products-2, .options-products-default, .options-products-2 {
         min-width: 414px !important;
     }
-    .products-3, .options-all-3 {
+    .products-3, .options-products-3 {
         min-width: 282px !important;
     }
-    .options-3-1 {
+    .options-3-2 {
         display: flex !important;
         justify-content: right;
         align-items: right;
@@ -165,256 +154,257 @@
     }
 }
 @media screen and (max-width: 915px) {
-    .columna, .products-2, .options-pred, .options-all-2 {
+    .products-default, .products-2, .options-products-default, .options-products-2 {
         min-width: 412px !important; 
     }
-    .products-3, .options-all-3 {
+    .products-3, .options-products-3 {
         min-width: 281px !important;
     }
 }
 @media screen and (max-width: 910px) {
-    .columna, .products-2, .options-pred, .options-all-2 {
+    .products-default, .products-2, .options-products-default, .options-products-2 {
         min-width: 410px !important;
     }
-    .products-3, .options-all-3 {
+    .products-3, .options-products-3 {
         min-width: 280px !important;
     }
 }
 @media screen and (max-width: 905px) {
-    .columna, .products-2, .options-pred, .options-all-2 {
+    .products-default, .products-2, .options-products-default, .options-products-2 {
         min-width: 408px !important;
     }
-    .products-3, .options-all-3 {
+    .products-3, .options-products-3 {
         min-width: 270px !important;
     }
 }
 @media screen and (max-width: 895px) {
-    .columna, .products-2, .options-pred, .options-all-2 {
+    .products-default, .products-2, .options-products-default, .options-products-2 {
         min-width: 406px !important;
     }
-    .products-3, .options-all-3 {
+    .products-3, .options-products-3 {
         min-width: 278px !important;
     }
 }
 @media screen and (max-width: 890px) {
-    .columna, .products-2, .options-pred, .options-all-2 {
+    .products-default, .products-2, .options-products-default, .options-products-2 {
         min-width: 404px !important; 
     }
-    .products-3, .options-all-3 {
+    .products-3, .options-products-3 {
         min-width: 277px !important;
     }
 }
 @media screen and (max-width: 885px) {
-    .columna, .products-2, .options-pred, .options-all-2 {
+    .products-default, .products-2, .options-products-default, .options-products-2 {
         min-width: 402px !important;
     }
-    .products-3, .options-all-3 {
+    .products-3, .options-products-3 {
         min-width: 276px !important;
     }
 }
 @media screen and (max-width: 880px) {
-    .columna, .products-2, .options-pred, .options-all-2 {
+    .products-default, .products-2, .options-products-default, .options-products-2 {
         min-width: 400px !important;
     }
-    .products-3, .options-all-3 {
+    .products-3, .options-products-3 {
         min-width: 275px !important;
     }
 }
 @media screen and (max-width: 875px) {
-    .columna, .products-2, .options-pred, .options-all-2 {
+    .products-default, .products-2, .options-products-default, .options-products-2 {
         min-width: 398px !important;
     }
-    .products-3, .options-all-3 {
+    .products-3, .options-products-3 {
         min-width: 274px !important;
     }
 }
 @media screen and (max-width: 870px) {
-    .columna, .products-2, .options-pred, .options-all-2 {
+    .products-default, .products-2, .options-products-default, .options-products-2 {
         min-width: 396px !important;
     }
-    .products-3, .options-all-3 {
+    .products-3, .options-products-3 {
         min-width: 272px !important;
     }
 }
 @media screen and (max-width: 865px) {
-    .columna, .products-2, .options-pred, .options-all-2 {
+    .products-default, .products-2, .options-products-default, .options-products-2 {
         min-width: 394px !important; 
     }
-    .products-3, .options-all-3 {
+    .products-3, .options-products-3 {
         min-width: 268px !important;
     }
 }
 @media screen and (max-width: 860px) {
-    .columna, .products-2, .options-pred, .options-all-2 {
+    .products-default, .products-2, .options-products-default, .options-products-2 {
         min-width: 392px !important;
     }
-    .products-3, .options-all-3 {
+    .products-3, .options-products-3 {
         min-width: 266px !important;
     }
 }
 @media screen and (max-width: 855px) {
-    .columna, .products-2, .options-pred, .options-all-2 {
+    .products-default, .products-2, .options-products-default, .options-products-2 {
         min-width: 390px !important;
     }
-    .products-3, .options-all-3 {
+    .products-3, .options-products-3 {
         min-width: 265px !important;
     }
 }
 @media screen and (max-width: 850px) {
-    .columna, .products-2, .options-pred, .options-all-2 {
+    .products-default, .products-2, .options-products-default, .options-products-2 {
         min-width: 388px !important;
     }
-    .products-3, .options-all-3 {
+    .products-3, .options-products-3 {
         min-width: 264px !important;
     }
 }
 @media screen and (max-width: 845px) {
-    .columna, .products-2, .options-pred, .options-all-2 {
+    .products-default, .products-2, .options-products-default, .options-products-2 {
         min-width: 386px !important;
     }
-    .products-3, .options-all-3 {
+    .products-3, .options-products-3 {
         min-width: 262px !important;
     }
 }
 @media screen and (max-width: 840px) {
-    .columna, .products-2, .options-pred, .options-all-2 {
+    .products-default, .products-2, .options-products-default, .options-products-2 {
         min-width: 384px !important; 
     }
-    .products-3, .options-all-3 {
+    .products-3, .options-products-3 {
         min-width: 261px !important;
     }
 }
 @media screen and (max-width: 835px) {
-    .columna, .products-2, .options-pred, .options-all-2 {
+    .products-default, .products-2, .options-products-default, .options-products-2 {
         min-width: 382px !important;
     }
-    .products-3, .options-all-3 {
+    .products-3, .options-products-3 {
         min-width: 260px !important;
     }
 }
 @media screen and (max-width: 830px) {
-    .columna, .products-2, .options-pred, .options-all-2 {
+    .products-default, .products-2, .options-products-default, .options-products-2 {
         min-width: 380px !important;
     }
-    .products-3, .options-all-3 {
+    .products-3, .options-products-3 {
         min-width: 258px !important;
     }
 }
 @media screen and (max-width: 825px) {
-    .columna, .products-2, .options-pred, .options-all-2 {
+    .products-default, .products-2, .options-products-default, .options-products-2 {
         min-width: 378px !important;
     }
-    .products-3, .options-all-3 {
+    .products-3, .options-products-3 {
         min-width: 256px !important;
     }
 }
 @media screen and (max-width: 820px) {
-    .columna, .products-2, .options-pred, .options-all-2 {
+    .products-default, .products-2, .options-products-default, .options-products-2 {
         min-width: 376px !important; 
     }
-    .products-3, .options-all-3 {
+    .products-3, .options-products-3 {
         min-width: 254px !important;
     }
 }
 @media screen and (max-width: 815px) {
-    .columna, .products-2, .options-pred, .options-all-2 {
+    .products-default, .products-2, .options-products-default, .options-products-2 {
         min-width: 374px !important;
     }
-    .products-3, .options-all-3 {
+    .products-3, .options-products-3 {
         min-width: 253px !important;
     }
 }
 @media screen and (max-width: 810px) {
-    .columna, .products-2, .options-pred, .options-all-2 {
+    .products-default, .products-2, .options-products-default, .options-products-2 {
         min-width: 372px !important;
     }
-    .products-3, .options-all-3 {
+    .products-3, .options-products-3 {
         min-width: 252px !important;
     }
 }
 @media screen and (max-width: 805px) {
-    .columna, .products-2, .options-pred, .options-all-2 {
+    .products-default, .products-2, .options-products-default, .options-products-2 {
         min-width: 370px !important;
     }
-    .products-3, .options-all-3 {
+    .products-3, .options-products-3 {
         min-width: 250px !important;
     }
 }
 @media screen and (max-width: 800px) {
-    .columna, .products-2, .options-pred, .options-all-2 {
+    .products-default, .products-2, .options-products-default, .options-products-2 {
         min-width: 368px !important;
     }
-    .products-3, .options-all-3 {
+    .products-3, .options-products-3 {
         min-width: 248px !important;
     }
 }
 @media screen and (max-width: 795px) {
-    .columna, .products-2, .options-pred, .options-all-2 {
+    .products-default, .products-2, .options-products-default, .options-products-2 {
         min-width: 366px !important; 
     }
-    .products-3, .options-all-3 {
+    .products-3, .options-products-3 {
         min-width: 247px !important;
     }
 }
 @media screen and (max-width: 790px) {
-    .columna, .products-2, .options-pred, .options-all-2 {
+    .products-default, .products-2, .options-products-default, .options-products-2 {
         min-width: 364px !important;
     }
-    .products-3, .options-all-3 {
+    .products-3, .options-products-3 {
         min-width: 246px !important;
     }
 }
 @media screen and (max-width: 786px) {
-    .columna, .products-2, .options-pred, .options-all-2 {
+    .products-default, .products-2, .options-products-default, .options-products-2 {
         min-width: 362px !important;
     }
-    .products-3, .options-all-3 {
+    .products-3, .options-products-3 {
         min-width: 244px !important;
     }
 }
 @media screen and (max-width: 780px) {
-    .columna, .products-2, .options-pred, .options-all-2 {
+    .products-default, .products-2, .options-products-default, .options-products-2 {
         min-width: 360px !important;
     }
-    .products-3, .options-all-3 {
+    .products-3, .options-products-3 {
         min-width: 243px !important;
     }
 }
 @media screen and (max-width: 777px) {
-    .columna, .products-2, .options-pred, .options-all-2 {
+    .products-default, .products-2, .options-products-default, .options-products-2 {
         min-width: 358px !important;
     }
-    .products-3, .options-all-3 {
+    .products-3, .options-products-3 {
         min-width: 242px !important;
     }
 }
 @media screen and (max-width: 774px) {
-    .products-3, .options-all-3 {
+    .products-3, .options-products-3 {
         min-width: 240px !important;
     }
 }
 @media screen and (max-width: 770px) {
-    .columna, .products-2, .options-pred, .options-all-2 {
+    .products-default, .products-2, .options-products-default, .options-products-2 {
         min-width: 356px !important;
     }
-    .products-3, .options-all-3 { 
+    .products-3, .options-products-3 { 
         min-width: 239px !important;
     }
 }
 @media screen and (max-width: 765px) {
-    .columna, .products-2, .options-pred, .options-all-2 { 
+    .products-default, .products-2, .options-products-default, .options-products-2 { 
         min-width: 354px !important; 
+    }
+    .products-4, .products-3, .options-products-4, .options-products-3, .options-4-2 { 
+        min-width: 236px !important;
     }
     #container-products-3 {
         max-width: 95% !important;
-        padding-left: 0px !important;
-        padding-right: 0px !important;
     }
     #container-products-3 .row-btn-vistas button {
         margin-right: 0px !important;
         margin-left: 10px !important;
     }
-    .options-all-3 {
+    .options-products-3 {
         padding-right: 3px !important;
         padding-left: 7px !important;
     }
@@ -422,12 +412,9 @@
         padding-left: 6px !important;
         padding-right: 3px !important;
     }
-    .figura-3 { 
+    .figura-3, #container-products-3 { 
         padding-left: 0px !important;
         padding-right: 0px !important;
-    }
-    .products-4, .products-3, .options-all-4, .options-all-3, .options-4-2 { 
-        min-width: 236px !important;
     }
     .options-4-2 {
         visibility: visible !important;
@@ -440,271 +427,262 @@
     
 }
 @media screen and (max-width: 764px) {
-    .products-4, .products-3, .options-all-4, .options-all-3, .options-4-2 {
+    .products-4, .products-3, .options-products-4, .options-products-3, .options-4-2 {
         min-width: 235px !important; 
     }
 }
 @media screen and (max-width: 762px) {
-    .columna, .products-2, .options-pred, .options-all-2 {
+    .products-default, .products-2, .options-products-default, .options-products-2 {
         min-width: 352px !important;
     }
-    .products-4, .products-3, .options-all-4, .options-all-3, .options-4-2 {
+    .products-4, .products-3, .options-products-4, .options-products-3, .options-4-2 {
         min-width: 233px !important; 
     }
 }
 @media screen and (max-width: 758px) {
-    .columna, .products-2, .options-pred, .options-all-2 {
+    .products-default, .products-2, .options-products-default, .options-products-2 {
         min-width: 352px !important;
     }
-    .products-4, .products-3, .options-all-4, .options-all-3, .options-4-2 { 
+    .products-4, .products-3, .options-products-4, .options-products-3, .options-4-2 { 
         min-width: 231px !important; 
     }
 }
 @media screen and (max-width: 756px) {
-    #row-productos-all .row-btn-vistas button {
+    #container-products-default .row-btn-vistas button, #container-products-2 .row-btn-vistas button {
         margin-right: 0px !important;
         margin-left: 10px !important;
     }
-    #container-products-2 .row-btn-vistas button {
-        margin-right: 0px !important;
-        margin-left: 10px !important;
-    }
-    #row-productos-all {
+    #container-products-default {
         padding-left: 15px;
         padding-right: 15px;
     }
-    .columna, .products-2 {
+    .products-default, .products-2 {
         min-width: 350px !important;
         padding-left: 2px !important;
         padding-right: 0px !important;
     }
-    .options-all-2 {
+    .options-products-2, .options-products-default {
         min-width: 350px !important;
         padding-left: 8px !important;
         padding-right: 4px !important;
     }
-    .options-pred {
-        min-width: 350px !important;
-        padding-left: 8px !important;
-        padding-right: 4px !important;
-    }
-    .products-4, .products-3, .options-all-4, .options-all-3, .options-4-2 {
+    .products-4, .products-3, .options-products-4, .options-products-3, .options-4-2 {
         min-width: 229px !important; 
     }
 }
 @media screen and (max-width: 750px) {
-    .columna, .products-2, .options-pred, .options-all-2 {
+    .products-default, .products-2, .options-products-default, .options-products-2 {
         min-width: 348px !important; 
     }
-    .products-4, .products-3, .options-all-4, .options-all-3, .options-4-2 {
+    .products-4, .products-3, .options-products-4, .options-products-3, .options-4-2 {
         min-width: 227px !important; 
     }
 }
 @media screen and (max-width: 747px) {
-    .columna, .products-2, .options-pred, .options-all-2 {
+    .products-default, .products-2, .options-products-default, .options-products-2 {
         min-width: 346px !important;
     }
-    .products-4, .products-3, .options-all-4, .options-all-3, .options-4-2 {
+    .products-4, .products-3, .options-products-4, .options-products-3, .options-4-2 {
         min-width: 226px !important; 
     }
 }
 @media screen and (max-width: 740px) {
-    .columna, .products-2, .options-pred, .options-all-2 {
+    .products-default, .products-2, .options-products-default, .options-products-2 {
         min-width: 344px !important;
     }
-    .products-4, .products-3, .options-all-4, .options-all-3, .options-4-2 {
+    .products-4, .products-3, .options-products-4, .options-products-3, .options-4-2 {
         min-width: 224px !important; 
     }
 }
 @media screen and (max-width: 737px) {
-    .columna, .products-2, .options-pred, .options-all-2 {
+    .products-default, .products-2, .options-products-default, .options-products-2 {
         min-width: 342px !important;
     }
-    .products-4, .products-3, .options-all-4, .options-all-3, .options-4-2 {
+    .products-4, .products-3, .options-products-4, .options-products-3, .options-4-2 {
         min-width: 223px !important; 
     }
 }
 @media screen and (max-width: 734px) {
-    .columna, .products-2, .options-pred, .options-all-2 {
+    .products-default, .products-2, .options-products-default, .options-products-2 {
         min-width: 340px !important;
     }
-    .products-4, .products-3, .options-all-4, .options-all-3, .options-4-2 {
+    .products-4, .products-3, .options-products-4, .options-products-3, .options-4-2 {
         min-width: 222px !important; 
     }
 }
 @media screen and (max-width: 731px) {
-    .columna, .products-2, .options-pred, .options-all-2 {
+    .products-default, .products-2, .options-products-default, .options-products-2 {
         min-width: 340px !important;
     }
-    .products-4, .products-3, .options-all-4, .options-all-3, .options-4-2 {
+    .products-4, .products-3, .options-products-4, .options-products-3, .options-4-2 {
         min-width: 221px !important; 
     }
 }
 @media screen and (max-width: 725px) {
-    .columna, .products-2, .options-pred, .options-all-2 {
+    .products-default, .products-2, .options-products-default, .options-products-2 {
         min-width: 338px !important;
     }
-    .products-4, .products-3, .options-all-4, .options-all-3, .options-4-2 {
+    .products-4, .products-3, .options-products-4, .options-products-3, .options-4-2 {
         min-width: 219px !important; 
     }
 }
 @media screen and (max-width: 722px) {
-    .columna, .products-2, .options-pred, .options-all-2 {
+    .products-default, .products-2, .options-products-default, .options-products-2 {
         min-width: 336px !important; 
     }
-    .products-4, .products-3, .options-all-4, .options-all-3, .options-4-2 {
+    .products-4, .products-3, .options-products-4, .options-products-3, .options-4-2 {
         min-width: 217px !important; 
     }
 }
 @media screen and (max-width: 716px) {
-    .columna, .products-2, .options-pred, .options-all-2 {
+    .products-default, .products-2, .options-products-default, .options-products-2 {
         min-width: 334px !important; 
     }
-    .products-4, .products-3, .options-all-4, .options-all-3, .options-4-2 {
+    .products-4, .products-3, .options-products-4, .options-products-3, .options-4-2 {
         min-width: 215px !important; 
     }
 }
 @media screen and (max-width: 712px) {
-    .columna, .products-2, .options-pred, .options-all-2 {
+    .products-default, .products-2, .options-products-default, .options-products-2 {
         min-width: 331px !important;
     }
-    .products-4, .products-3, .options-all-4, .options-all-3, .options-4-2 {
+    .products-4, .products-3, .options-products-4, .options-products-3, .options-4-2 {
         min-width: 214px !important; 
     }
 }
 @media screen and (max-width: 706px) {
-    .columna, .products-2, .options-pred, .options-all-2 {
+    .products-default, .products-2, .options-products-default, .options-products-2 {
         min-width: 328px !important;
     }
-    .products-4, .products-3, .options-all-4, .options-all-3, .options-4-2 {
+    .products-4, .products-3, .options-products-4, .options-products-3, .options-4-2 {
         min-width: 212px !important; 
     }
 }
 @media screen and (max-width: 700px) {
-    .columna, .products-2, .options-pred, .options-all-2 {
+    .products-default, .products-2, .options-products-default, .options-products-2 {
         min-width: 325px !important; 
     }
-    .products-4, .products-3, .options-all-4, .options-all-3, .options-4-2 {
+    .products-4, .products-3, .options-products-4, .options-products-3, .options-4-2 {
         min-width: 210px !important; 
     }
 }
 @media screen and (max-width: 695px) {
-    .columna, .products-2, .options-pred, .options-all-2 {
+    .products-default, .products-2, .options-products-default, .options-products-2 {
         min-width: 323px !important;  
     }
-    .products-4, .products-3, .options-all-4, .options-all-3, .options-4-2 {
+    .products-4, .products-3, .options-products-4, .options-products-3, .options-4-2 {
         min-width: 208px !important; 
     }
 }
 @media screen and (max-width: 690px) {
-    .columna, .products-2, .options-pred, .options-all-2 {
+    .products-default, .products-2, .options-products-default, .options-products-2 {
         min-width: 321px !important;
     }
-    .products-4, .products-3, .options-all-4, .options-all-3, .options-4-2 {
+    .products-4, .products-3, .options-products-4, .options-products-3, .options-4-2 {
         min-width: 206px !important; 
     }
 }
 @media screen and (max-width: 686px) {
-    .columna, .products-2, .options-pred, .options-all-2 {
+    .products-default, .products-2, .options-products-default, .options-products-2 {
         min-width: 317px !important;
     }
-    .products-4, .products-3, .options-all-4, .options-all-3, .options-4-2 {
+    .products-4, .products-3, .options-products-4, .options-products-3, .options-4-2 {
         min-width: 204px !important; 
     }
 }
 @media screen and (max-width: 680px) {
-    .columna, .products-2, .options-pred, .options-all-2 {
+    .products-default, .products-2, .options-products-default, .options-products-2 {
         min-width: 316px !important;
     }
-    .products-4, .products-3, .options-all-4, .options-all-3, .options-4-2 {
+    .products-4, .products-3, .options-products-4, .options-products-3, .options-4-2 {
         min-width: 203px !important; 
     }
 }
 @media screen and (max-width: 677px) {
-    .columna, .products-2, .options-pred, .options-all-2 {
+    .products-default, .products-2, .options-products-default, .options-products-2 {
         min-width: 312px !important; 
     }
-    .products-4, .products-3, .options-all-4, .options-all-3, .options-4-2 {
+    .products-4, .products-3, .options-products-4, .options-products-3, .options-4-2 {
         min-width: 202px !important; 
     }
 }
 @media screen and (max-width: 670px) {
-    .columna, .products-2, .options-pred, .options-all-2 {
+    .products-default, .products-2, .options-products-default, .options-products-2 {
         min-width: 310px !important; 
     }
-    .products-4, .products-3, .options-all-4, .options-all-3, .options-4-2 {
+    .products-4, .products-3, .options-products-4, .options-products-3, .options-4-2 {
         min-width: 200px !important; 
     }
 }
 @media screen and (max-width: 665px) {
-    .columna, .products-2, .options-pred, .options-all-2 {
+    .products-default, .products-2, .options-products-default, .options-products-2 {
         min-width: 308px !important; 
     }
-    .products-4, .products-3, .options-all-4, .options-all-3, .options-4-2 {
+    .products-4, .products-3, .options-products-4, .options-products-3, .options-4-2 {
         min-width: 199px !important; 
     }
 }
 @media screen and (max-width: 660px) {
-    .columna, .products-2, .options-pred, .options-all-2 {
+    .products-default, .products-2, .options-products-default, .options-products-2 {
         min-width: 306px !important;
     }
-    .products-4, .products-3, .options-all-4, .options-all-3, .options-4-2 {
+    .products-4, .products-3, .options-products-4, .options-products-3, .options-4-2 {
         min-width: 198px !important; 
     }
 }
 @media screen and (max-width: 656px) {
-    .columna, .products-2, .options-pred, .options-all-2 {
+    .products-default, .products-2, .options-products-default, .options-products-2 {
         min-width: 304px !important; 
     }
-    .products-4, .products-3, .options-all-4, .options-all-3, .options-4-2 {
+    .products-4, .products-3, .options-products-4, .options-products-3, .options-4-2 {
         min-width: 197px !important; 
     }
 }
 @media screen and (max-width: 652px) {
-    .columna, .products-2, .options-pred, .options-all-2 {
+    .products-default, .products-2, .options-products-default, .options-products-2 {
         min-width: 302px !important;  
     }
-    .products-4, .products-3, .options-all-4, .options-all-3, .options-4-2 {
+    .products-4, .products-3, .options-products-4, .options-products-3, .options-4-2 {
         min-width: 196px !important; 
     }
 }
 @media screen and (max-width: 648px) {
-    .columna, .products-2, .options-pred, .options-all-2 {
+    .products-default, .products-2, .options-products-default, .options-products-2 {
         min-width: 300px !important; 
     }
-    .products-4, .products-3, .options-all-4, .options-all-3, .options-4-2 {
+    .products-4, .products-3, .options-products-4, .options-products-3, .options-4-2 {
         min-width: 195px !important; 
     }
 }
 @media screen and (max-width: 645px) {
-    .columna, .products-2, .options-pred, .options-all-2 {
+    .products-default, .products-2, .options-products-default, .options-products-2 {
         min-width: 298px !important; 
     }
-    .products-4, .products-3, .options-all-4, .options-all-3, .options-4-2 {
+    .products-4, .products-3, .options-products-4, .options-products-3, .options-4-2 {
         min-width: 194px !important; 
     }
 }
 @media screen and (max-width: 640px) {
-    .columna, .products-2, .options-pred, .options-all-2 {
+    .products-default, .products-2, .options-products-default, .options-products-2 {
         min-width: 296px !important; 
     }
-    .products-4, .products-3, .options-all-4, .options-all-3, .options-4-2 {
+    .products-4, .products-3, .options-products-4, .options-products-3, .options-4-2 {
         min-width: 193px !important; 
     }
 }
 @media screen and (max-width: 637px) {
-    .columna, .products-2, .options-pred, .options-all-2 {
+    .products-default, .products-2, .options-products-default, .options-products-2 {
         min-width: 294px !important;
     }
-    .products-4, .products-3, .options-all-4, .options-all-3, .options-4-2 {
+    .products-4, .products-3, .options-products-4, .options-products-3, .options-4-2 {
         min-width: 192px !important; 
     }
 }
 @media screen and (max-width: 634px) {
-    .columna, .products-2, .options-pred, .options-all-2 {
+    .products-default, .products-2, .options-products-default, .options-products-2 {
         min-width: 293px !important;
     }
-    .products-4, .products-3, .options-all-4, .options-all-3, .options-4-2 {
+    .products-4, .products-3, .options-products-4, .options-products-3, .options-4-2 {
         min-width: 191px !important; 
     }
 }
