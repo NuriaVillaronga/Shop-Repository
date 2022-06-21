@@ -1,4 +1,4 @@
-/*VIEWS COLUMNS CSS*/
+/*VIEWS*/
 #container-products-default {
     width: 1592px;
 }
@@ -8,10 +8,12 @@
     align-items: right !important;
     padding-right: 15px;
 } 
-.products-default {
+.products-default, .container-options {
     display: flex;
     justify-content: center !important;
     align-items: center !important;
+}
+.products-default {
     padding-top: 0px;
     padding-bottom: 50px !important;
     max-width: 398px !important;
@@ -51,40 +53,9 @@
 }
 
 
-
-
-.vacio {
-    border: 1px solid rgb(203, 255, 179) !important;
-}
-.container-productos {
-    padding: 0px !important;
-    display: flex;
-    justify-content: center !important;
-    align-items: center !important;
-}
-.row-container-products {
-    display: flex;
-    justify-content: center !important;
-    align-items: center !important;
-    padding: 0px !important;
-    margin: 0px !important;
-}
-.row-options-columna {
-    display: flex;
-    justify-content: center !important;
-    align-items: center !important;
-}
+/*FILTER*/
 .row-btn-vistas {
     text-align: right !important;
-}
-.tabla-filtros {
-    box-shadow: 7px 7px 10px 0px rgb(240, 240, 240);
-    max-width: 370px;
-    padding-left: 28px !important;
-    padding-right: 0px !important;
-    position: absolute;
-    background-color: white;
-    top: 50px;
 }
 .offcanvas-filter {
     width: 400px !important;
@@ -94,22 +65,28 @@
     border-right: 1px solid rgb(243, 243, 243) !important;
     border-top: 1px solid rgb(250, 250, 250) !important;
 }
-.button-filtros-delete {
-    text-align: center !important;
+.offcanvas-body {
+    position: relative !important;
 }
-.button-filtros-delete button{
-    background-color: white !important;
+.offcanvas-body .row-delete-filtros {
+    position: absolute !important;
+    bottom: 0px;
+    width: 90% !important;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+.col-resultado {
+    font-size: 12px !important;
+    padding-top: 5px;
+}
+.col-clean { 
+    text-align: right;
+}
+.col-clean button{
+    background-color: transparent !important;
+    font-size: 12px !important;
     color: rgb(0, 0, 0);
-    font-size: 13px;
-    padding: 7px;
-    width: 35%;
-    border: 1px solid rgb(192, 192, 192);
-}
-.button-filtros-delete button:hover {
-    border: 1px solid rgb(0, 0, 0);
-}
-.row-delete-filtros {
-    padding-bottom: 30px;
+    border: none !important;
 }
 .icon-filtro {
     padding-left: 5px;
@@ -159,11 +136,10 @@
 }
 .row-filtros {
     display: none;
-    margin-right: 0px !important;
-    margin-left: 0px;
+    margin-bottom: 10px;
     padding-left: 0px;
     padding-bottom: 20px;
-    margin-bottom: 10px;
+    
 }
 .btn-seleccionado {
     border: 1px solid rgb(0, 0, 0);
@@ -180,14 +156,14 @@
 
 
 .offcanvas-body::-webkit-scrollbar {
-    width: 7px;               /* width of the entire scrollbar */
+    width: 7px;
 } 
 .offcanvas-body::-webkit-scrollbar-track {
-    background: rgb(243, 243, 243);        /* color of the tracking area */
+    background: rgb(243, 243, 243);
     border-radius: 20px;
 }
 .offcanvas-body::-webkit-scrollbar-thumb {
-    background-color: rgb(209, 209, 209);    /* color of the scroll thumb */
+    background-color: rgb(209, 209, 209);
     border-radius: 20px !important; 
 }
 
@@ -216,6 +192,27 @@
 
 .filtro-principal-ocultar {
     display: none;
+}
+
+
+/*OTHERS*/
+.container-productos {
+    padding: 0px !important;
+    display: flex;
+    justify-content: center !important;
+    align-items: center !important;
+}
+.row-container-products {
+    display: flex;
+    justify-content: center !important;
+    align-items: center !important;
+    padding: 0px !important;
+    margin: 0px !important;
+}
+
+
+.vacio {
+    border: 1px solid rgb(203, 255, 179) !important;
 }
 
 #view-2, #view-3, #view-4 {

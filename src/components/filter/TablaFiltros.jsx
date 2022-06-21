@@ -24,8 +24,12 @@ function TablaFiltros(props) {
                             <Filtro arrayFiltros={arrayCalzado} tipo="TALLA CALZADO" id="talla-calzado"/>
                             <Filtro arrayFiltros={arrayPrecio} tipo="PRECIO" id="talla-precio"/>
                         </div>
-                        <div className="row-delete-filtros">
-                            <div className="col-12 button-filtros-delete"><button type="button">ELIMINAR FILTROS</button></div>
+                        <div>
+                            Ordenar por .....
+                        </div>
+                        <div className="row row-delete-filtros">
+                            <div className="col-6 col-resultado">1240 RESULTADOS</div>
+                            <div className="col-6 col-clean"><button type="button">LIMPIAR</button></div>
                         </div>
                     </Offcanvas.Body>
                 </Offcanvas>
