@@ -10,7 +10,7 @@ import filter from './icons/filter.png';
 
 function App() {
 
-  var contadorN =  1;
+  let contadorN =  1;
 
   const showCell = (dato) => {
 
@@ -40,113 +40,118 @@ function App() {
     }
   }
 
+
   const handleColDos = () => {
-    var columnasPred = document.querySelectorAll(".columna");
-    var columnas4 = document.querySelectorAll(".columna-4");
-    var columnas3 = document.querySelectorAll(".columna-3");
-    var columnas2 = document.querySelectorAll(".columna-2");
-    var rowPred = document.getElementById("row-productos-all");
-    var row4 = document.getElementById("row-productos-all-4");
-    var row3 = document.getElementById("row-productos-all-3");
-    var row2 = document.getElementById("row-productos-all-2");
-    var iconPred = document.getElementById("view-default");
-    var icon4 = document.getElementById("view-4");
-    var icon3 = document.getElementById("view-3");
-    var icon2 = document.getElementById("view-2"); 
+    let columnasPred = document.querySelectorAll(".columna"); 
+    let columnas4 = document.querySelectorAll(".columna-4");
+    let columnas3 = document.querySelectorAll(".columna-3");
+    let columnas2 = document.querySelectorAll(".columna-2");
+    let rowPred = document.getElementById("row-productos-all");
+    let row4 = document.getElementById("row-productos-all-4");
+    let row3 = document.getElementById("row-productos-all-3");
+    let row2 = document.getElementById("row-productos-all-2");
+    let iconPred = document.getElementById("view-default");
+    let icon4 = document.getElementById("view-4");
+    let icon3 = document.getElementById("view-3");
+    let icon2 = document.getElementById("view-2"); 
 
     columnas4.forEach(columna4 => columna4.setAttribute("style","display:none"));
     columnas3.forEach(columna3 => columna3.setAttribute("style","display:none"));
-    columnas2.forEach(columna2 => columna2.setAttribute("style","display:flex"));
+    columnas2.forEach(columna2 => columna2.setAttribute("style","display:flex; justify-content: center !important; align-items: center !important;padding-top: 20px; padding-bottom: 50px; padding-left: 20px; padding-right: 20px; min-width: 800px"));
     columnasPred.forEach(columna => columna.setAttribute("style","display:none"));
     row4.setAttribute("style","display:none");
     row3.setAttribute("style","display:none");
-    row2.setAttribute("style","display:flex");
+    row2.setAttribute("style","display:flex; display: flex; justify-content: center; align-items: center; width: 1600px;");
     rowPred.setAttribute("style","display:none");
 
-    var svgDoc = icon2.contentDocument;
-    var palo = svgDoc.getElementById("palo");
+    let svgDoc = icon2.contentDocument;
+    let palo = svgDoc.getElementById("palo");
     console.log(palo);
 
-    icon4.setAttribute("style","color:rgb(219, 219, 219)");
+    icon4.setAttribute("style","fill: red");
     icon3.setAttribute("style","color:rgb(219, 219, 219)");
     icon2.setAttribute("style","color:black");
     iconPred.setAttribute("style","color:rgb(219, 219, 219)");
 
-    var filtros = document.getElementById("div-filtros");
+    let filtros = document.getElementById("div-filtros");
     filtros.setAttribute("style","display:none");
     setFiltro(true);
   }
 
   const handleColTres = () => {
-    var columnasPred = document.querySelectorAll(".columna");
-    var columnas4 = document.querySelectorAll(".columna-4");
-    var columnas3 = document.querySelectorAll(".columna-3");
-    var columnas2 = document.querySelectorAll(".columna-2");
-    var rowPred = document.getElementById("row-productos-all");
-    var row4 = document.getElementById("row-productos-all-4");
-    var row3 = document.getElementById("row-productos-all-3");
-    var row2 = document.getElementById("row-productos-all-2");
-    var iconPred = document.getElementById("view-default");
-    var icon4 = document.getElementById("view-4");
-    var icon3 = document.getElementById("view-3");
-    var icon2 = document.getElementById("view-2"); 
+    let columnasPred = document.querySelectorAll(".columna");
+    let columnas4 = document.querySelectorAll(".columna-4");
+    let columnas3 = document.querySelectorAll(".columna-3");
+    let columnas2 = document.querySelectorAll(".columna-2");
+    let rowPred = document.getElementById("row-productos-all");
+    let row4 = document.getElementById("row-productos-all-4");
+    let row3 = document.getElementById("row-productos-all-3");
+    let row2 = document.getElementById("row-productos-all-2");
+    let iconPred = document.getElementById("view-default");
+    let icon4 = document.getElementById("view-4");
+    let icon3 = document.getElementById("view-3");
+    let icon2 = document.getElementById("view-2"); 
 
     columnas4.forEach(columna4 => columna4.setAttribute("style","display:none"));
-    columnas3.forEach(columna3 => columna3.setAttribute("style","display:flex"));
+    columnas3.forEach(columna3 => columna3.setAttribute("style","display:flex; display: flex; justify-content: center !important; align-items: center !important; padding-top: 0px; padding-bottom: 50px !important; min-width: 570px;"));
     columnas2.forEach(columna2 => columna2.setAttribute("style","display:none"));
     columnasPred.forEach(columna => columna.setAttribute("style","display:none"));
     row4.setAttribute("style","display:none");
-    row3.setAttribute("style","display:flex");
+    row3.setAttribute("style","display:flex; display: flex; justify-content: center; align-items: center; width: 1710px;");
     row2.setAttribute("style","display:none");
     rowPred.setAttribute("style","display:none");
 
-    var filtros = document.getElementById("div-filtros");
+    icon4.setAttribute("style","color: red");
+
+    let filtros = document.getElementById("div-filtros");
     filtros.setAttribute("style","display:none");
     setFiltro(true);
   }
 
   const handleColCuatro = () => {
-    var columnasPred = document.querySelectorAll(".columna");
-    var columnas4 = document.querySelectorAll(".columna-4");
-    var columnas3 = document.querySelectorAll(".columna-3");
-    var columnas2 = document.querySelectorAll(".columna-2");
-    var rowPred = document.getElementById("row-productos-all");
-    var row4 = document.getElementById("row-productos-all-4");
-    var row3 = document.getElementById("row-productos-all-3");
-    var row2 = document.getElementById("row-productos-all-2");
-    var iconPred = document.getElementById("view-default");
-    var icon4 = document.getElementById("view-4");
-    var icon3 = document.getElementById("view-3");
-    var icon2 = document.getElementById("view-2"); 
+    let columnasPred = document.querySelectorAll(".columna");
+    let columnas4 = document.querySelectorAll(".columna-4");
+    let columnas3 = document.querySelectorAll(".columna-3");
+    let columnas2 = document.querySelectorAll(".columna-2");
+    let rowPred = document.getElementById("row-productos-all");
+    let row4 = document.getElementById("row-productos-all-4");
+    let row3 = document.getElementById("row-productos-all-3");
+    let row2 = document.getElementById("row-productos-all-2");
+    let iconPred = document.getElementById("view-default");
+    let icon4 = document.getElementById("view-4");
+    let icon3 = document.getElementById("view-3");
+    let icon2 = document.getElementById("view-2"); 
 
-    columnas4.forEach(columna4 => columna4.setAttribute("style","display:flex"));
+    columnas4.forEach(columna4 => columna4.setAttribute("style","display:flex; justify-content: center; align-items: center; padding-top: 0px; padding-bottom: 50px !important; max-width: 398px !important;"));
     columnas3.forEach(columna3 => columna3.setAttribute("style","display:none"));
     columnas2.forEach(columna2 => columna2.setAttribute("style","display:none"));
     columnasPred.forEach(columna => columna.setAttribute("style","display:none"));
     
-    row4.setAttribute("style","display:flex");
+    row4.setAttribute("style","display:flex; width: 1592px");
     row3.setAttribute("style","display:none");
     row2.setAttribute("style","display:none");
     rowPred.setAttribute("style","display:none");
 
-    var filtros = document.getElementById("div-filtros");
+    icon4.setAttribute("style","color: red");
+
+    let filtros = document.getElementById("div-filtros");
     filtros.setAttribute("style","display:none");
     setFiltro(true);
   }
 
   const handleColPred = () => {
-    var columnasPred = document.querySelectorAll(".columna");
-    var columnas4 = document.querySelectorAll(".columna-4");
-    var columnas3 = document.querySelectorAll(".columna-3");
-    var columnas2 = document.querySelectorAll(".columna-2");
-    var rowPred = document.getElementById("row-productos-all");
-    var row4 = document.getElementById("row-productos-all-4");
-    var row3 = document.getElementById("row-productos-all-3");
-    var row2 = document.getElementById("row-productos-all-2");
-    var iconPred = document.getElementById("view-default");
-    var icon4 = document.getElementById("view-4");
-    var icon3 = document.getElementById("view-3");
-    var icon2 = document.getElementById("view-2"); 
+    let columnasPred = document.querySelectorAll(".columna");
+    let columnas4 = document.querySelectorAll(".columna-4");
+    let columnas3 = document.querySelectorAll(".columna-3");
+    let columnas2 = document.querySelectorAll(".columna-2");
+    let rowPred = document.getElementById("row-productos-all");
+    let row4 = document.getElementById("row-productos-all-4");
+    let row3 = document.getElementById("row-productos-all-3");
+    let row2 = document.getElementById("row-productos-all-2");
+    let iconPred = document.getElementById("view-default");
+    let icon4 = document.getElementById("view-4");
+    let icon3 = document.getElementById("view-3");
+    let icon2 = document.getElementById("view-2"); 
 
     columnas4.forEach(columna4 => columna4.setAttribute("style","display:none"));
     columnas3.forEach(columna3 => columna3.setAttribute("style","display:none"));
@@ -158,12 +163,12 @@ function App() {
     row2.setAttribute("style","display:none");
     rowPred.setAttribute("style","display:flex");
 
-    icon4.setAttribute("style","color:rgb(219, 219, 219)");
+    icon4.setAttribute("style","color: red");
     icon3.setAttribute("style","color:rgb(219, 219, 219)");
     icon2.setAttribute("style","color:rgb(219, 219, 219)");
     iconPred.setAttribute("style","color:black");
 
-    var filtros = document.getElementById("div-filtros");
+    let filtros = document.getElementById("div-filtros");
     filtros.setAttribute("style","display:none");
     setFiltro(true);
   }
@@ -173,15 +178,15 @@ function App() {
   const [show, setShow] = useState(false);
 
   const handleClose = () => {
-      var filtroBtnShow = document.querySelectorAll(".filtro-principal");
-      var filtroBtnHidde = document.querySelectorAll(".filtro-principal-ocultar");
+      let filtroBtnShow = document.querySelectorAll(".filtro-principal");
+      let filtroBtnHidde = document.querySelectorAll(".filtro-principal-ocultar");
       filtroBtnShow.forEach(btn => btn.style.display = "block");
       filtroBtnHidde.forEach(btn => btn.style.display = "none");
       setShow(false);
   }
   const handleShow = () => {
-      var filtroBtnShow = document.querySelectorAll(".filtro-principal");
-      var filtroBtnHidde = document.querySelectorAll(".filtro-principal-ocultar");
+      let filtroBtnShow = document.querySelectorAll(".filtro-principal");
+      let filtroBtnHidde = document.querySelectorAll(".filtro-principal-ocultar");
       filtroBtnShow.forEach(btn => btn.style.display = "none");
       filtroBtnHidde.forEach(btn => btn.style.display = "block");
       setShow(true);
@@ -198,7 +203,7 @@ function App() {
                 </div>
 
 
-                <div className='col-12 container-productos' onClick={alert(window.innerWidth)}>
+                <div className='col-12 container-productos'>
 
 
                     <div className='row' id="row-productos-all">

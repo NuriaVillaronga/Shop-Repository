@@ -47,10 +47,7 @@
     align-items: right !important;
     padding-right: 15px;
 } 
-
-
-
-#row-productos-all, #row-productos-all-4 {
+#row-productos-all {
     width: 1592px;
 }
 .row-options-columna {
@@ -71,14 +68,6 @@
     margin-top: 80px !important;
     margin-bottom: 20px !important;
     padding-right: 10px;
-}
-.columna-4{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding-top: 0px;
-    padding-bottom: 50px !important;
-    max-width: 398px !important;
 }
 .options-all-4 {
     margin-top: 80px !important;
@@ -102,25 +91,8 @@
 .options-4-2, .options-4-1 {
     visibility: hidden;
 }
-
-#row-productos-all-3 {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
 #row-productos-all-3 .vacio {
     display: none !important;
-}
-#row-productos-all-3 {
-    width: 1710px;
-}
-.columna-3 {
-    display: flex;
-    justify-content: center !important;
-    align-items: center !important;
-    padding-top: 0px;
-    padding-bottom: 50px !important;
-    min-width: 570px;
 }
 .figura-3 { 
     width: 570px;
@@ -141,26 +113,8 @@
 .options-3-2 {
     visibility: hidden;
 }
-
-
-/*Datos iniciales columna 2*/
-#row-productos-all-2 {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
 #row-productos-all-2 .vacio {
     display: none !important;
-}
-.columna-2 {
-    display: flex;
-    justify-content: center !important;
-    align-items: center !important;
-    padding-top: 20px;
-    padding-bottom: 50px;
-    padding-left: 20px;
-    padding-right: 20px;
-    min-width: 800px;
 }
 .figura-2 { 
     width: 800px;
@@ -174,9 +128,7 @@
     min-width: 800px;
     margin-top: 80px !important;
 }
-#row-productos-all-2 {
-    width: 1600px;
-}
+
 
 
 
