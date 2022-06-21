@@ -3,7 +3,7 @@ import Vista from '../Vista';
 
 function DefaultView(props) {
 
-    return (    <div className='row' id="row-productos-all">
+    return (    <div className='row' id="row-productos-all"> 
                     <div className="col-12">
                         <div className="row row-options-columna">
                             <div className="col-3 options-pred">

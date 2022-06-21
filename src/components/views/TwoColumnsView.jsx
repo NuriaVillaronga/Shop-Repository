@@ -4,7 +4,7 @@ import Vista from '../Vista';
 function TwoColumnsView(props) {
 
   return (  
-            <div className='row' id="row-productos-all-2">
+            <div className='row' id="container-products-2">
                 <div className="col-12">
                     <div className="row row-options-columna">
                         <div className="col-3 options-all-2">

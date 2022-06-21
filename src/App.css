@@ -1,9 +1,6 @@
-/*DEFAULT COLUMNS VIEW*/
+/*VIEWS COLUMNS CSS*/
 #row-productos-all {
     width: 1592px;
-}
-.options-3, .options-2 {
-    visibility: hidden;
 }
 .options-3, .options-2, .options-1 {
     display: flex;
@@ -21,98 +18,31 @@
 }
 .options-pred {
     max-width: 398px !important;
-    margin-top: 80px !important;
-    margin-bottom: 20px !important;
-    padding-right: 10px;
 }
-.figura-pred { 
-    width: 398px;
-    margin: 0px !important;
-    padding: 6px;
-}
-.figura-pred img {
-    width: 398px; 
-}
-
-
-
-/*FOUR COLUMNS VIEW*/
-.columna-4{
+.products-4, .products-3, .products-2, #container-products-4, #container-products-3, #container-products-2, .options-3-3 {   
     display: none;
 }
-#row-productos-all-4 {
-    display: none;
-}
-#row-productos-all-4 .vacio {
-    display: none !important;
-}
-.options-4-2, .options-4-1 {
+.options-4-2, .options-4-1, .options-3-2, .options-3, .options-2 {
     visibility: hidden;
 }
-.options-all-4 {
-    margin-top: 80px !important;
-    margin-bottom: 20px !important;
+.options-all-4, .options-pred {
     padding-right: 10px;
 }
-.figura-4 img {
+.options-all-4, .options-pred, .options-all-3 {
+    margin-top: 80px !important;
+    margin-bottom: 20px !important;
+}
+.figura-4 img, .figura-pred img, .figura-4, .figura-pred {
     width: 398px; 
 }
-.figura-4 { 
-    width: 398px;
+.figura-4, .figura-pred, .figura-3, .figura-2 { 
     margin: 0px !important;
     padding: 6px;
 }
-
-
-
-/*THREE COLUMNS VIEW*/
-.columna-3 {
-    display: none;
-}
-#row-productos-all-3 {
-    display: none;
-}
-#row-productos-all-3 .vacio {
-    display: none !important;
-}
-.figura-3 { 
-    width: 570px;
-    margin: 0px !important;
-    padding: 6px;
-}
-.figura-3 img {
+.figura-3 img, .options-all-3, .figura-3 {
     width: 570px; 
 }
-.options-all-3 {
-    margin-top: 80px !important;
-    margin-bottom: 20px !important;
-    min-width: 570px;
-}
-.options-3-3 {
-    display: none;
-}
-.options-3-2 {
-    visibility: hidden;
-}
-
-
-
-/*TWO COLUMNS VIEW*/
-.columna-2 {
-    display: none;
-}
-#row-productos-all-2 {
-    display: none;
-}
-#row-productos-all-2 .vacio {
-    display: none !important;
-}
-.figura-2 { 
-    width: 800px;
-    margin: 0px !important;
-    padding: 6px;
-}
-.figura-2 img {
+.figura-2 img, .figura-2 {
     width: 800px; 
 }
 .options-all-2 {

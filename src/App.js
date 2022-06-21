@@ -34,13 +34,13 @@ function App() {
 
   const handleColDos = () => {
     let columnasPred = document.querySelectorAll(".columna"); 
-    let columnas4 = document.querySelectorAll(".columna-4");
-    let columnas3 = document.querySelectorAll(".columna-3");
-    let columnas2 = document.querySelectorAll(".columna-2");
-    let rowPred = document.getElementById("row-productos-all");
-    let row4 = document.getElementById("row-productos-all-4");
-    let row3 = document.getElementById("row-productos-all-3");
-    let row2 = document.getElementById("row-productos-all-2");
+    let columnas4 = document.querySelectorAll(".products-4");
+    let columnas3 = document.querySelectorAll(".products-3"); 
+    let columnas2 = document.querySelectorAll(".products-2");
+    let rowPred = document.getElementById("row-productos-all"); 
+    let row4 = document.getElementById("container-products-4");
+    let row3 = document.getElementById("container-products-3");
+    let row2 = document.getElementById("container-products-2");
 
     columnas4.forEach(columna4 => columna4.style.display = "none");
     columnas3.forEach(columna3 => columna3.style.display = "none");
@@ -54,13 +54,13 @@ function App() {
 
   const handleColTres = () => {
     let columnasPred = document.querySelectorAll(".columna");
-    let columnas4 = document.querySelectorAll(".columna-4");
-    let columnas3 = document.querySelectorAll(".columna-3");
-    let columnas2 = document.querySelectorAll(".columna-2");
+    let columnas4 = document.querySelectorAll(".products-4");
+    let columnas3 = document.querySelectorAll(".products-3");
+    let columnas2 = document.querySelectorAll(".products-2");
     let rowPred = document.getElementById("row-productos-all");
-    let row4 = document.getElementById("row-productos-all-4");
-    let row3 = document.getElementById("row-productos-all-3");
-    let row2 = document.getElementById("row-productos-all-2");
+    let row4 = document.getElementById("container-products-4");
+    let row3 = document.getElementById("container-products-3");
+    let row2 = document.getElementById("container-products-2");
 
     columnas4.forEach(columna4 => columna4.style.display = "none");
     columnas3.forEach(columna3 => columna3.setAttribute("style","display:flex; display: flex; justify-content: center !important; align-items: center !important; padding-top: 0px; padding-bottom: 50px !important; min-width: 570px;"));
@@ -74,13 +74,13 @@ function App() {
 
   const handleColCuatro = () => {
     let columnasPred = document.querySelectorAll(".columna");
-    let columnas4 = document.querySelectorAll(".columna-4");
-    let columnas3 = document.querySelectorAll(".columna-3");
-    let columnas2 = document.querySelectorAll(".columna-2");
+    let columnas4 = document.querySelectorAll(".products-4");
+    let columnas3 = document.querySelectorAll(".products-3");
+    let columnas2 = document.querySelectorAll(".products-2");
     let rowPred = document.getElementById("row-productos-all");
-    let row4 = document.getElementById("row-productos-all-4");
-    let row3 = document.getElementById("row-productos-all-3");
-    let row2 = document.getElementById("row-productos-all-2");
+    let row4 = document.getElementById("container-products-4");
+    let row3 = document.getElementById("container-products-3");
+    let row2 = document.getElementById("container-products-2");
 
     columnas4.forEach(columna4 => columna4.setAttribute("style","display:flex; justify-content: center; align-items: center; padding-top: 0px; padding-bottom: 50px !important; max-width: 398px !important;"));
     columnas3.forEach(columna3 => columna3.style.display = "none");
@@ -94,13 +94,13 @@ function App() {
 
   const handleColPred = () => {
     let columnasPred = document.querySelectorAll(".columna");
-    let columnas4 = document.querySelectorAll(".columna-4");
-    let columnas3 = document.querySelectorAll(".columna-3");
-    let columnas2 = document.querySelectorAll(".columna-2");
+    let columnas4 = document.querySelectorAll(".products-4");
+    let columnas3 = document.querySelectorAll(".products-3");
+    let columnas2 = document.querySelectorAll(".products-2");
     let rowPred = document.getElementById("row-productos-all");
-    let row4 = document.getElementById("row-productos-all-4");
-    let row3 = document.getElementById("row-productos-all-3");
-    let row2 = document.getElementById("row-productos-all-2");
+    let row4 = document.getElementById("container-products-4");
+    let row3 = document.getElementById("container-products-3");
+    let row2 = document.getElementById("container-products-2");
 
     columnas4.forEach(columna4 => columna4.style.display = "none");
     columnas3.forEach(columna3 => columna3.style.display = "none");
