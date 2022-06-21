@@ -173,9 +173,6 @@
     .columna, .columna-3, .options-pred, .options-all-3 {
         min-width: 374px !important;
     }
-    #row-productos-all .col-vista {
-        padding-right: 68px !important;
-    }
     #row-productos-all .col-filter {
         padding-left: 58px !important;
     }

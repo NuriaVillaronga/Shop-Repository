@@ -12,14 +12,6 @@ function TablaFiltros(props) {
     const arrayPantalon = [ "34", "36", "38", "40" ];
     const arrayCalzado = [ "37", "38", "38.5", "39", "39.5" ];
 
-    const handleDeleteFiltros = () => {
-        var checks = document.querySelectorAll(".check-filtro");
-            checks.forEach(check => {
-                if (check.checked == true) {
-                check.checked = false;
-                }
-            });
-    }
 
     return (  <Offcanvas show={props.show} className="offcanvas-filter" scroll={false} backdrop={false}>
                     <Offcanvas.Body>
@@ -33,7 +25,7 @@ function TablaFiltros(props) {
                             <Filtro arrayFiltros={arrayPrecio} tipo="PRECIO" id="talla-precio"/>
                         </div>
                         <div className="row-delete-filtros">
-                            <div className="col-12 button-filtros-delete"><button type="button" onClick={handleDeleteFiltros}>ELIMINAR FILTROS</button></div>
+                            <div className="col-12 button-filtros-delete"><button type="button">ELIMINAR FILTROS</button></div>
                         </div>
                     </Offcanvas.Body>
                 </Offcanvas>

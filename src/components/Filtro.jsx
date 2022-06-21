@@ -66,8 +66,8 @@ class Filtro extends React.Component {
                 </div>
                 <div className="row-filtros" ref={this.filtroRow}> 
                     {
-                        this.props.arrayFiltros.map((filtro) => (
-                            <button type="button" className={`btn-filtro`} onClick={this.handleFiltroClick}>{filtro}</button>
+                        this.props.arrayFiltros.map((filtro, id) => (
+                            <button type="button" className={`btn-filtro`} key={id} onClick={this.handleFiltroClick}>{filtro}</button>
                         ))
                     }
                 </div>
