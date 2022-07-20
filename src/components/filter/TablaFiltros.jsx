@@ -12,8 +12,10 @@ function TablaFiltros(props) {
     const arrayPantalon = [ "34", "36", "38", "40" ];
     const arrayCalzado = [ "37", "38", "38.5", "39", "39.5" ];
 
+    const handleClose = () => props.setShow(false);
 
     return (  <Offcanvas show={props.show} className="offcanvas-filter" scroll={false} backdrop={false}>
+                    <Offcanvas.Header><button onClick={handleClose}>CERRAR</button></Offcanvas.Header>
                     <Offcanvas.Body>
                         <div>
                             <Filtro arrayFiltros={arrayProductos} tipo="PRODUCTOS" id="producto"/>

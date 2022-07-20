@@ -2,41 +2,35 @@ import React, {useState} from 'react';
 import './App.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import datos from './datos.json'
-import Lleno from './components/product/Lleno';
-import Vacio from './components/product/Vacio';
 import TwoColumnsView from './components/view/TwoColumnsView';
-import DefaultView from './components/view/DefaultView';
 import ThreeColumnsView from './components/view/ThreeColumnsView';
 import FourColumnsView from './components/view/FourColumnsView';
 import TablaFiltros from './components/filter/TablaFiltros';
+import portada from './nudes-painting/compo15.png';
+import Product from './components/product/Product';
+import { Fragment } from 'react';
+
+import { Swiper, SwiperSlide } from "swiper/react";
+import { Navigation } from "swiper";
+import 'swiper/css';
+import 'swiper/css/navigation';
 
 function App() {
 
-  let contadorN =  1;
-
   const showCell = (dato) => {
 
-    contadorN++;
-
-    if (contadorN === 8) {
-      return <Vacio id={dato.id} vacio="vacio"></Vacio> 
-    }
-    else if (contadorN === 1 || contadorN === 7 || contadorN === 13 || contadorN === 15 || contadorN === 6 || contadorN === 4 || contadorN === 10 || contadorN === 2 || contadorN === 9 || contadorN === 3 || contadorN === 14 || contadorN === 11 || contadorN === 5 || contadorN === 12) {
-      return <Lleno id={dato.id}></Lleno>
-    }
-    else if (contadorN === 16) {
-      contadorN = 0;
-      return <Lleno id={dato.id}></Lleno>
-    }
+      return <Fragment>
+                <div className="col-3 products-4" key={`col4-full-id${dato.id}`}><Product figura="figura-4" producto={dato} id={dato.id}></Product></div> 
+                <div className="col-3 products-3" key={`col3-full-id${dato.id}`}><Product figura="figura-3" producto={dato} id={dato.id}></Product></div>
+                <div className="col-3 products-2" key={`col2-full-id${dato.id}`}><Product figura="figura-2" producto={dato} id={dato.id}></Product></div>
+            </Fragment>
   }
 
 
   const handleColDos = () => {
-    let columnasPred = document.querySelectorAll(".products-default"); 
     let columnas4 = document.querySelectorAll(".products-4");
     let columnas3 = document.querySelectorAll(".products-3"); 
-    let columnas2 = document.querySelectorAll(".products-2");
-    let rowPred = document.getElementById("container-products-default");  
+    let columnas2 = document.querySelectorAll(".products-2"); 
     let row4 = document.getElementById("container-products-4");
     let row3 = document.getElementById("container-products-3");
     let row2 = document.getElementById("container-products-2");
@@ -44,19 +38,15 @@ function App() {
     columnas4.forEach(columna4 => columna4.style.display = "none");
     columnas3.forEach(columna3 => columna3.style.display = "none");
     columnas2.forEach(columna2 => columna2.setAttribute("style","display:flex; justify-content: center !important; align-items: center !important;padding-top: 20px; padding-bottom: 50px; padding-left: 20px; padding-right: 20px; min-width: 800px"));
-    columnasPred.forEach(columna => columna.style.display = "none");
     row4.style.display = "none";
     row3.style.display = "none";
     row2.setAttribute("style","display:flex; display: flex; justify-content: center; align-items: center; width: 1600px;");
-    rowPred.style.display = "none";
   }
 
   const handleColTres = () => {
-    let columnasPred = document.querySelectorAll(".products-default");
     let columnas4 = document.querySelectorAll(".products-4");
     let columnas3 = document.querySelectorAll(".products-3");
     let columnas2 = document.querySelectorAll(".products-2");
-    let rowPred = document.getElementById("container-products-default");
     let row4 = document.getElementById("container-products-4");
     let row3 = document.getElementById("container-products-3");
     let row2 = document.getElementById("container-products-2");
@@ -64,19 +54,15 @@ function App() {
     columnas4.forEach(columna4 => columna4.style.display = "none");
     columnas3.forEach(columna3 => columna3.setAttribute("style","display:flex; display: flex; justify-content: center !important; align-items: center !important; padding-top: 0px; padding-bottom: 50px !important; min-width: 570px;"));
     columnas2.forEach(columna2 => columna2.style.display = "none");
-    columnasPred.forEach(columna => columna.style.display = "none");
     row4.style.display = "none";
     row3.setAttribute("style","display:flex; display: flex; justify-content: center; align-items: center; width: 1710px;");
     row2.style.display = "none";
-    rowPred.style.display = "none";
   }
 
   const handleColCuatro = () => {
-    let columnasPred = document.querySelectorAll(".products-default");
     let columnas4 = document.querySelectorAll(".products-4");
     let columnas3 = document.querySelectorAll(".products-3");
     let columnas2 = document.querySelectorAll(".products-2");
-    let rowPred = document.getElementById("container-products-default");
     let row4 = document.getElementById("container-products-4");
     let row3 = document.getElementById("container-products-3");
     let row2 = document.getElementById("container-products-2");
@@ -84,59 +70,46 @@ function App() {
     columnas4.forEach(columna4 => columna4.setAttribute("style","display:flex; justify-content: center; align-items: center; padding-top: 0px; padding-bottom: 50px !important; max-width: 398px !important;"));
     columnas3.forEach(columna3 => columna3.style.display = "none");
     columnas2.forEach(columna2 => columna2.style.display = "none");
-    columnasPred.forEach(columna => columna.style.display = "none");
     row4.setAttribute("style","display:flex; width: 1592px");
     row3.style.display = "none";
     row2.style.display = "none";
-    rowPred.style.display = "none";
-  }
-
-  const handleColPred = () => {
-    let columnasPred = document.querySelectorAll(".products-default");
-    let columnas4 = document.querySelectorAll(".products-4");
-    let columnas3 = document.querySelectorAll(".products-3");
-    let columnas2 = document.querySelectorAll(".products-2");
-    let rowPred = document.getElementById("container-products-default");
-    let row4 = document.getElementById("container-products-4");
-    let row3 = document.getElementById("container-products-3");
-    let row2 = document.getElementById("container-products-2");
-
-    columnas4.forEach(columna4 => columna4.style.display = "none");
-    columnas3.forEach(columna3 => columna3.style.display = "none");
-    columnas2.forEach(columna2 => columna2.style.display = "none");
-    columnasPred.forEach(columna => columna.setAttribute("style","display:flex"));
-    
-    row4.style.display = "none";
-    row3.style.display = "none";
-    row2.style.display = "none";
-    rowPred.setAttribute("style","display:flex");
-  }
+  } 
 
   const [show, setShow] = useState(false);
-
-  const handleClose = () => {
-      let filtroBtnShow = document.querySelectorAll(".filtro-principal");
-      let filtroBtnHidde = document.querySelectorAll(".filtro-principal-ocultar");
-      filtroBtnShow.forEach(btn => btn.style.display = "block");
-      filtroBtnHidde.forEach(btn => btn.style.display = "none");
-      setShow(false);
-  }
-  const handleShow = () => {
-      let filtroBtnShow = document.querySelectorAll(".filtro-principal");
-      let filtroBtnHidde = document.querySelectorAll(".filtro-principal-ocultar");
-      filtroBtnShow.forEach(btn => btn.style.display = "none");
-      filtroBtnHidde.forEach(btn => btn.style.display = "block");
-      setShow(true);
-  }
+  const handleShow = () => setShow(true);
 
   return (
             <div className='row row-container-products container-fluid'>
+                <div className="col-12 cabecera"><img src={portada}></img></div>
+
+
+                <div className="slider">
+
+
+                <Swiper
+                  modules={[Navigation]}
+                  slidesPerView={4}
+                  spaceBetween={0}
+                  navigation={{clickable:true}}
+                  className="mySwiper"
+                >
+                  <SwiperSlide><button>TODO</button></SwiperSlide>
+                  <SwiperSlide><button>VESTIDOS</button></SwiperSlide>
+                  <SwiperSlide><button>PANTALONES/FALDAS</button></SwiperSlide>
+                  <SwiperSlide><button>ACCESORIOS</button></SwiperSlide>
+                  <SwiperSlide><button>ABRIGOS/CHAQUETAS</button></SwiperSlide>
+                  <SwiperSlide><button>CALZADO</button></SwiperSlide>
+                  <SwiperSlide><button>CAMISETAS/SUDADERAS</button></SwiperSlide>
+                </Swiper>
+
+
+                </div>
+
                 <div className='col-12 container-productos'>
-                    <DefaultView handleColPred={handleColPred} handleColCuatro={handleColCuatro} handleColTres={handleColTres} handleColDos={handleColDos} handleClose={handleClose} handleShow={handleShow} datos={datos} showCell={showCell}/>
-                    <TwoColumnsView handleColPred={handleColPred} handleColCuatro={handleColCuatro} handleColTres={handleColTres} handleColDos={handleColDos} handleClose={handleClose} handleShow={handleShow} datos={datos} showCell={showCell}/>
-                    <ThreeColumnsView handleColPred={handleColPred} handleColCuatro={handleColCuatro} handleColTres={handleColTres} handleColDos={handleColDos} handleClose={handleClose} handleShow={handleShow} datos={datos} showCell={showCell}/>
-                    <FourColumnsView handleColPred={handleColPred} handleColCuatro={handleColCuatro} handleColTres={handleColTres} handleColDos={handleColDos} handleClose={handleClose} handleShow={handleShow} datos={datos} showCell={showCell}/>
-                    <TablaFiltros show={show} handleClose={handleClose}></TablaFiltros>
+                    <TwoColumnsView handleColCuatro={handleColCuatro} handleColTres={handleColTres} handleColDos={handleColDos} handleShow={handleShow} datos={datos} showCell={showCell}/>
+                    <ThreeColumnsView handleColCuatro={handleColCuatro} handleColTres={handleColTres} handleColDos={handleColDos} handleShow={handleShow} datos={datos} showCell={showCell}/>
+                    <FourColumnsView handleColCuatro={handleColCuatro} handleColTres={handleColTres} handleColDos={handleColDos} handleShow={handleShow} datos={datos} showCell={showCell}/>
+                    <TablaFiltros show={show} setShow={setShow}></TablaFiltros>
                 </div> 
             </div>
         );

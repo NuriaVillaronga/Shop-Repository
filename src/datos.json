@@ -1,126 +1,52 @@
 [
     {
         "id":1,
-        "imagen":"imagen1"
+        "imagen":"imagen1",
+        "name":"Un mundo raro",
+        "estado":"1",
+        "desc":"Descripcion breve",
+        "categoria":"Calzado", 
+        "tipo":"Sandalias",
+        "sizes":[{"talla":"38.5","est":"vendido"},{"talla":"39","est":"disponible"},{"talla":"39.5","est":"disponible"},{"talla":"40","est":"disponible"}]
     },
     {
         "id":2,
-        "imagen":"imagen2"
+        "imagen":"imagen2",
+        "name":"Amor con amor se paga",
+        "estado":"1",
+        "desc":"Descripcion breve", 
+        "categoria":"Ropa",
+        "tipo":"Jersey",
+        "sizes":[{"talla":"XS","est":"vendido"},{"talla":"S","est":"disponible"},{"talla":"M","est":"disponible"}]
     },
     {
         "id":3,
-        "imagen":"imagen3"
+        "imagen":"imagen3",
+        "name":"Ojala que te vaya bonito",
+        "estado":"1",
+        "desc":"Descripcion breve",
+        "categoria":"Accesorios",
+        "tipo":"Collar",
+        "sizes":[]
     },
     {
         "id":4,
-        "imagen":"imagen4"
+        "imagen":"imagen4",
+        "name":"Si señor",
+        "estado":"0",
+        "desc":"Descripcion breve",
+        "categoria":"Calzado",
+        "tipo":"Sneakers",
+        "sizes":[{"talla":"38","est":"vendido"},{"talla":"39","est":"vendido"},{"talla":"40","est":"vendido"}]
     },
     {
         "id":5,
-        "imagen":"imagen5"
-    },
-    {
-        "id":6,
-        "imagen":"imagen6"
-    },
-    {
-        "id":7,
-        "imagen":"imagen7"
-    },
-    {
-        "id":8,
-        "imagen":"imagen8"
-    },
-    {
-        "id":9,
-        "imagen":"imagen9"
-    },
-    {
-        "id":10,
-        "imagen":"imagen10"
-    },
-    {
-        "id":11,
-        "imagen":"imagen11"
-    },
-    {
-        "id":12,
-        "imagen":"imagen12"
-    },
-    {
-        "id":13,
-        "imagen":"imagen13"
-    },
-    {
-        "id":14,
-        "imagen":"imagen14"
-    },
-    {
-        "id":15,
-        "imagen":"imagen15"
-    },
-    {
-        "id":16,
-        "imagen":"imagen16"
-    },
-    {
-        "id":17,
-        "imagen":"imagen17"
-    },
-    {
-        "id":18,
-        "imagen":"imagen18"
-    },
-    {
-        "id":19,
-        "imagen":"imagen19"
-    },
-    {
-        "id":20,
-        "imagen":"imagen20"
-    },
-    {
-        "id":21,
-        "imagen":"imagen21"
-    },
-    {
-        "id":22,
-        "imagen":"imagen22"
-    },
-    {
-        "id":23,
-        "imagen":"imagen23"
-    },
-    {
-        "id":24,
-        "imagen":"imagen24"
-    },
-    {
-        "id":25,
-        "imagen":"imagen25"
-    },
-    {
-        "id":26,
-        "imagen":"imagen26"
-    },
-    {
-        "id":27,
-        "imagen":"imagen27"
-    },
-    {
-        "id":28,
-        "imagen":"imagen28"
-    },
-    {
-        "id":29,
-        "imagen":"imagen29"
-    },
-    {
-        "id":30,
-        "imagen":"imagen30"
-    },
-    {
-        "id":31,
-        "imagen":"imagen31"
+        "imagen":"imagen5",
+        "name":"Golondrina viajera",
+        "estado":"1",
+        "desc":"Descripcion breve",
+        "categoria":"Ropa",
+        "tipo":"Camiseta",
+        "sizes":[{"talla":"XS","est":"disponible"},{"talla":"S","est":"disponible"},{"talla":"M","est":"disponible"},{"talla":"L","est":"disponible"}] 
     }
 ]

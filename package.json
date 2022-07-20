@@ -10,8 +10,9 @@
     "react": "^18.1.0",
     "react-bootstrap": "^2.4.0",
     "react-dom": "^18.1.0",
-    "react-responsive-picture": "^3.2.2",
     "react-scripts": "5.0.1",
+    "slick-carousel": "^1.8.1",
+    "swiper": "^8.2.4",
     "web-vitals": "^2.1.4"
   },
   "scripts": {

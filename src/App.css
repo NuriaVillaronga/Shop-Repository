@@ -1,57 +1,149 @@
 /*VIEWS*/
-#container-products-default {
+#container-products-4 {
     width: 1592px;
 }
-.options-default-1, .options-default-2, .options-default-3 {
+.options-4-1, .options-4-2, .options-4-3 {
     display: flex;
     justify-content: right !important;
     align-items: right !important;
     padding-right: 15px;
 } 
-.products-default, .container-options {
+.products-4, .container-options {
     display: flex;
     justify-content: center !important;
     align-items: center !important;
 }
-.products-default {
+.products-4 {
     padding-top: 0px;
     padding-bottom: 50px !important;
     max-width: 398px !important;
 }
-.options-products-default {
+.options-products-4 {
     max-width: 398px !important;
 }
-.products-4, .products-3, .products-2, #container-products-4, #container-products-3, #container-products-2, .options-3-3 {   
+.products-3, .products-2, #container-products-3, #container-products-2, .options-3-3 {   
     display: none;
 }
-.options-4-2, .options-4-1, .options-3-1, .options-default-1, .options-default-2 {
+.options-4-2, .options-4-1, .options-3-1 {
     visibility: hidden;
 }
-.options-products-4, .options-products-default {
+.options-products-4 {
     padding-right: 10px;
 }
-.options-products-4, .options-products-default, .options-products-3 {
-    margin-top: 80px !important;
+.options-products-4, .options-products-3 {
+    margin-top: 30px !important;
     margin-bottom: 20px !important;
 }
-.figura-4 img, .figura-pred img, .figura-4, .figura-pred {
+.figura-4 img, .figura-4 {
     width: 398px; 
 }
-.figura-4, .figura-pred, .figura-3, .figura-2 { 
+.figura-4, .figura-3, .figura-2 { 
     margin: 0px !important;
     padding: 6px;
 }
-.figura-3 img, .options-products-3, .figura-3 {
+.figura-3 img, .figura-3 {
     width: 570px; 
+}
+.options-products-3 {
+    min-width: 570px;
 }
 .figura-2 img, .figura-2 {
     width: 800px; 
 }
 .options-products-2 {
     min-width: 800px;
-    margin-top: 80px !important;
+    margin-top: 30px !important;
+}
+.figura-4 img, .figura-3 img, .figura-2 img {
+    cursor: pointer;
+}
+.ocultas {
+    display: none;
+    height: 100% !important;
 }
 
+.quick {
+    background-color: transparent !important;
+    margin-top: -45px;
+    margin-bottom: 13.5px;
+    position: relative;
+    display: none;
+}
+.div-rapido {
+   text-align: center;
+   margin-left: 7px;
+   margin-right: 7px;
+   padding: 5px;
+   background-color: rgba(255, 255, 255, 0.747);
+}
+.q-talla {
+    padding-top: 3px;
+    display: none;
+    font-size: 11px;
+}
+.q-talla button{
+    width: 35px;
+    margin: 3px;
+    background-color: transparent !important;
+    color: grey;
+    text-align: center;
+    border: 1px solid grey !important;
+}
+.q-talla .vendido{
+    text-decoration: line-through;
+}
+.q-talla .disponible:hover {
+    border: 1px solid black !important;
+    color: black;
+    cursor: pointer;
+}
+.q-talla .vendido:hover {
+    cursor: not-allowed !important;
+}
+.q-title {
+    font-size: 11px;
+}
+.pi-nom {
+    color: rgb(83, 83, 83);
+    font-size: 12px;
+}
+.pi-nom #name-div, .pi-nom #categoria-div, .pi-nom #separation-div {
+    display: inline;
+}
+.pi-nom #separation-div {
+    padding-right: 8px;
+    padding-left: 8px;
+}
+.pi-precio {
+    font-size: 15px;
+}
+.pi-desc, .pi-precio {
+    color: rgb(83, 83, 83);
+}
+.col-desc {
+    text-align: left;
+}
+.col-precio {
+    text-align: right;
+}
+.prod-estado-1 {
+    visibility: hidden;
+}
+.prod-estado {
+    padding: 3px !important;
+    position: absolute;
+    margin-top: 15px !important;
+    margin-left: 0px !important;
+    font-weight: 400 !important;
+    border-radius: 0px !important;
+    color: rgb(255, 255, 255) !important;
+    font-size: 11px !important;
+}
+.info-producto {
+    padding-top: 8px;
+    padding-bottom: 8px;
+    text-align: center;
+}
 
 /*FILTER*/
 .row-btn-vistas {
@@ -59,7 +151,6 @@
 }
 .offcanvas-filter {
     width: 400px !important;
-    margin-top: 130px !important;
     border: none !important;
     padding-left: 20px;
     border-right: 1px solid rgb(243, 243, 243) !important;
@@ -180,7 +271,7 @@
     padding: 0px !important;
     padding-right: 2px;
 }
-.filtro-principal, .filtro-principal-ocultar {
+.filtro-principal {
     font-size: 13px;
     border: none;
     background-color: transparent;
@@ -188,10 +279,6 @@
     color: black;
     padding: 0px !important;
     padding-right: 2px;
-}
-
-.filtro-principal-ocultar {
-    display: none;
 }
 
 
@@ -210,11 +297,6 @@
     margin: 0px !important;
 }
 
-
-.vacio {
-    border: 1px solid rgb(203, 255, 179) !important;
-}
-
 #view-2, #view-3, #view-4 {
     height: 16px !important;
 }
@@ -226,6 +308,50 @@
 }
 #view-4 {
     width: 32px !important;
+}
+
+.cabecera {
+    background-color: white;
+    text-align: center;
+}
+.cabecera img {
+    height: 750px !important;
+    width: 1300px !important;
+}
+
+.slider {
+    margin-top: 100px !important;
+}
+.swiper-slide {
+    text-align: center !important;
+    padding: 5px;
+}
+.swiper-slide button {
+    background-color: white;
+    border: 1px solid rgb(243, 243, 243);
+    width: 180px !important;
+    font-size: 13px !important;
+    text-align: center !important;
+    padding: 3px;
+    /*color: rgb(138, 138, 138);*/
+    color: black;
+}
+.mySwiper {
+    width: 46%;
+}
+.swiper-button-next:after {
+    padding-left: 38px !important;
+}
+.swiper-button-prev:after {
+    padding-right: 38px !important;
+}
+.swiper-button-next:after, .swiper-button-prev:after {
+    font-size: 12px !important;
+    color: black !important;
+}
+.swiper-button-next, .swiper-rtl .swiper-button-prev {
+    right: 10px !important;
+    left: auto !important;
 }
 
 @import url(css/1815-1345.css) all;

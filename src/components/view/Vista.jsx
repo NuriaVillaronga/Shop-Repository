@@ -10,7 +10,6 @@ function Vista(props) {
                 <button onClick={props.handleColDos}><img src={view2} id="view-2"/></button>
                 <button onClick={props.handleColTres}><img src={view3} id="view-3"/></button>
                 <button onClick={props.handleColCuatro}><img src={view4} id="view-4"/></button>
-                <button onClick={props.handleColPred}><div className="view-default">Defecto</div></button>
             </div>
         </Fragment>);
 }

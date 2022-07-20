@@ -280,6 +280,9 @@
     .products-2, .options-products-2 {
         min-width: 500px !important;
     }
+    .quick {
+        display: none !important;
+    }
 }
 @media screen and (max-width: 1095px) {
     .products-default, .products-3, .options-products-default, .options-products-3 {
