@@ -1,12 +1,13 @@
 import React from 'react';
+import MultiRangeSlider from "multi-range-slider-react";
 
-class Filtro extends React.Component {
+class FiltroPrecio extends React.Component {
         constructor(props) {
           super(props);
           this.state = {
             hidde: false,
-            valor: true,
-            contador: 0
+            minValue: 0,
+            maxValue: 100
           };
           
           this.filtroRow = React.createRef();
@@ -31,24 +32,10 @@ class Filtro extends React.Component {
         }
     }
 
-    handleFiltroClick = (boton) => {
-        
-        if (boton.target.getAttribute("class") == "btn-seleccionado") {
-            this.setState({ valor: true });
-        }
-        if (boton.target.getAttribute("class") == "btn-filtro") {
-            this.setState({ valor: false });
-        }
-
-
-        if (this.state.valor == true) { 
-            boton.target.setAttribute("class","btn-filtro");
-        }
-        if (this.state.valor == false) { 
-            boton.target.setAttribute("class","btn-seleccionado");
-        }
-
-    }
+    handleInput = (e) => {
+        this.setState({ minValue: e.minValue })
+        this.setState({ maxValue: e.maxValue })
+    };
 
     render () {
         return (  
@@ -58,7 +45,6 @@ class Filtro extends React.Component {
                         <div className="row row-seleccion">
                             <div className="div-tipo col-7">
                                 <div>{this.props.tipo}</div>
-                                <div className="contador-filtro">{this.state.contador}</div>
                             </div>
                             <div className="icon-filtro col-4">
                                 <div className="icono-mostrar" ref={this.filtroMostrar}>+</div>
@@ -68,11 +54,13 @@ class Filtro extends React.Component {
                     </div>
                 </div>
                 <div className="row-filtros" ref={this.filtroRow}> 
-                    {
-                        this.props.arrayFiltros.map((filtro, id) => (
-                            <button type="button" className={`btn-filtro`} key={id} onClick={this.handleFiltroClick}>{filtro}</button>
-                        ))
-                    }
+                    <div id="container-range">
+                        <div className="row labels-range">
+                            <div className="col-6 rango-minimo">{this.state.minValue} EUR</div>
+                            <div className="col-6 rango-maximo">{this.state.maxValue} EUR</div>
+                        </div>
+                        <MultiRangeSlider min={0} max={100} step={5} ruler={false} label={false} preventWheel={false} minValue={this.state.minValue} maxValue={this.state.maxValue} onInput={(e) => {this.handleInput(e);}}/>
+                    </div>
                 </div>
             </div>
         );
@@ -80,4 +68,4 @@ class Filtro extends React.Component {
   
 }
 
-export default Filtro; 
+export default FiltroPrecio; 

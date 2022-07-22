@@ -31,17 +31,17 @@ class Product extends React.Component {
 
     handleEnterRapida = () => {
       if (this.props.producto.categoria == "Accesorios") {
-        this.rapidaContainer.current.setAttribute("style","margin-top: -39px; margin-bottom: 13.5px; padding: 4.5px; border: 1px solid grey; cursor: pointer");
+        this.rapidaContainer.current.setAttribute("style","margin-top: -41px; margin-bottom: -1px; padding: 4.5px; border: 1px solid grey; cursor: pointer");
         this.rapidaTalla.current.setAttribute("style","display:none");
       }
       else {
-        this.rapidaContainer.current.setAttribute("style","margin-top: -79px; margin-bottom: 13.5px");
+        this.rapidaContainer.current.setAttribute("style","margin-top: -70px; margin-bottom: 15px");
         this.rapidaTalla.current.setAttribute("style","display:block");
       }
     }
 
     handleOutRapida = () => {
-      this.rapidaContainer.current.setAttribute("style","margin-top: -41px; margin-bottom: 13.5px");
+      this.rapidaContainer.current.setAttribute("style","margin-top: -37px; margin-bottom: 15px");
       this.rapidaTalla.current.setAttribute("style","display:none");
     }
 

@@ -6,7 +6,7 @@ import TwoColumnsView from './components/view/TwoColumnsView';
 import ThreeColumnsView from './components/view/ThreeColumnsView';
 import FourColumnsView from './components/view/FourColumnsView';
 import TablaFiltros from './components/filter/TablaFiltros';
-import portada from './nudes-painting/compo15.png';
+import portada from './vestidos.jpg';
 import Product from './components/product/Product';
 import { Fragment } from 'react';
 
@@ -83,26 +83,15 @@ function App() {
                 <div className="col-12 cabecera"><img src={portada}></img></div>
 
 
-                <div className="slider">
-
-
-                <Swiper
-                  modules={[Navigation]}
-                  slidesPerView={4}
-                  spaceBetween={0}
-                  navigation={{clickable:true}}
-                  className="mySwiper"
-                >
-                  <SwiperSlide><button>TODO</button></SwiperSlide>
-                  <SwiperSlide><button>VESTIDOS</button></SwiperSlide>
-                  <SwiperSlide><button>PANTALONES/FALDAS</button></SwiperSlide>
-                  <SwiperSlide><button>ACCESORIOS</button></SwiperSlide>
-                  <SwiperSlide><button>ABRIGOS/CHAQUETAS</button></SwiperSlide>
-                  <SwiperSlide><button>CALZADO</button></SwiperSlide>
-                  <SwiperSlide><button>CAMISETAS/SUDADERAS</button></SwiperSlide>
-                </Swiper>
-
-
+                <div className="slider row">
+                  <div className="col-3"></div>
+                  <div className="col-6 tipo-content">
+                    <div><button className="button-todos">VER TODO</button></div>
+                    <div><button>CORTOS</button></div>
+                    <div><button>MIDI</button></div>
+                    <div><button>LARGOS</button></div>
+                  </div>
+                  <div className="col-3"></div>
                 </div>
 
                 <div className='col-12 container-productos'>
