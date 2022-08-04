@@ -48,5 +48,15 @@
         "categoria":"Ropa",
         "tipo":"Camiseta",
         "sizes":[{"talla":"XS","est":"disponible"},{"talla":"S","est":"disponible"},{"talla":"M","est":"disponible"},{"talla":"L","est":"disponible"}] 
+    },
+    {
+        "id":6,
+        "imagen":"imagen6",
+        "name":"Golondrina viajera",
+        "estado":"1",
+        "desc":"Descripcion breve",
+        "categoria":"Ropa",
+        "tipo":"Camiseta",
+        "sizes":[{"talla":"XS","est":"disponible"},{"talla":"S","est":"disponible"},{"talla":"M","est":"disponible"},{"talla":"L","est":"disponible"}] 
     }
 ]

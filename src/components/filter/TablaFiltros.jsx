@@ -1,4 +1,4 @@
-import React, {useState} from 'react';
+import React from 'react';
 import Filtro from './Filtro';
 import { Offcanvas } from 'react-bootstrap';
 import FiltroPrecio from './FiltroPrecio';
@@ -13,8 +13,6 @@ function TablaFiltros(props) {
     const arrayCalzado = [ "37", "38", "38.5", "39", "39.5" ];
 
     const handleClose = () => props.setShow(false);
-
-    
 
     return (  <Offcanvas show={props.show} className="offcanvas-filter" scroll={false} backdrop={false}>
                     <Offcanvas.Header>

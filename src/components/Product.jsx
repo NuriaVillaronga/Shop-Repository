@@ -1,7 +1,7 @@
 import React from 'react';
 import { Figure } from 'react-bootstrap';
-import imagen from '../../img1.jpg';
-import imagen2 from '../../img2.jpg';
+import imagen from '../img1.jpg';
+import imagen2 from '../img2.jpg';
 import Badge from 'react-bootstrap/Badge';
 
 
@@ -47,8 +47,8 @@ class Product extends React.Component {
 
     render () {
         return (  
-                  <Figure className={this.props.figura} onMouseOver={this.handleEnter} onMouseOut={this.handleOut}>
-                    <Badge bg="dark" className={`prod-estado-${this.props.producto.estado} prod-estado`}>AGOTADO</Badge>
+                  <Figure onMouseOver={this.handleEnter} onMouseOut={this.handleOut}>
+                    <Badge className={`prod-estado-${this.props.producto.estado} prod-estado`}>AGOTADO</Badge>
                     <Figure.Image src={imagen} ref={this.imagenMostrar}/>
                     <Figure.Image src={imagen2} className="ocultas" ref={this.imagenOcultar}/>
                     <Figure.Caption className="quick" ref={this.rapida} onMouseOver={this.handleEnterRapida} onMouseOut={this.handleOutRapida}>
